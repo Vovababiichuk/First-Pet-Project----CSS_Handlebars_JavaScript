@@ -11,9 +11,21 @@ main,
 header,
 footer,
 nav {
-  margin: 32px;
+  /* margin: 2px; */
 }
 
 section {
-  padding: 16px;
+  /* padding: 16px; */
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+footer em {
+  color: #767676;
+}
+
+li {
+  margin-bottom: 5px;
 }
