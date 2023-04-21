@@ -1,0 +1,162 @@
+<main>
+   <section class="bio">
+      <div class="container">
+         <div class="about">
+            <img class="about__img" src="/images/Albert-Einstein.jpg" alt="Albert Einstein photo" width="350"
+               height="350">
+            <div class="about__content">
+               <h1 class="about__name">{{name}}</h1>
+               <span>Birthdate: {{birthdate}}</span>
+               <span>
+                  <address>Birthplace: {{birthplace}}</address>
+               </span>
+               <span>Death-date: {{deathdate}}</span>
+               <span>Death-place: {{deathplace}}</span>
+               <span>Nationality: {{nationality}}</span>
+               <span>Occupation:: {{occupation}}</span>
+               <em>Know:</em>
+               <ul>
+                  {{#each known_for}}
+                  <li>{{this}}</li>
+                  {{/each}}
+               </ul>
+            </div>
+         </div>
+         <div class="education">
+            <div class="education__title">
+               <img src="/images/education.png" alt="education icon" width="30" height="30">
+               <span>{{> title data="My education" big=true}}</span>
+            </div>
+            <div class="education__content">
+               {{#each education}}
+               <ul>
+                  <li>Degree: {{degree}}</li>
+                  <li>Field:: {{field}}</li>
+                  <li>Institution: {{institution}}</li>
+                  <li>Year: {{year}}</li>
+               </ul>
+               {{/each}}
+            </div>
+         </div>
+         <div class="publications">
+            <div class="publications__title">
+               <img src="/images/publication.png" alt="education icon" width="30" height="30">
+               <span>{{> title data="Notable publications" big=true}}</span>
+            </div>
+            <div class="publications__work">
+               <span>{{notable_publications.[0].title}}</span>
+               <ul>
+                  <li>Year: {{notable_publications.[0].year}}</li>
+                  <li>Publisher: {{notable_publications.[0].publisher}}</li>
+               </ul>
+               <span>{{notable_publications.[1].title}}</span>
+               <ul>
+                  <li>Year: {{notable_publications.[1].year}}</li>
+                  <li>Publisher: {{notable_publications.[1].publisher}}</li>
+               </ul>
+
+            </div>
+         </div>
+         <div class="partners">
+            <div class="partners__title">
+               <img src="/images/partners.png" alt="partners icon" width="35" height="35">
+               <span>{{> title data="Partners" big=true}}</span>
+            </div>
+            <div class="partners__person">
+               <span>{{partners.[0].name}}</span>
+               <ul>
+                  <li>Relationship: {{partners.[0].relationship}}</li>
+                  <li>Years: {{partners.[0].years}}</li>
+               </ul>
+               <span>{{partners.[1].name}}</span>
+               <ul>
+                  <li>Relationship: {{partners.[1].relationship}}</li>
+                  <li>Years: {{partners.[1].years}}</li>
+               </ul>
+            </div>
+         </div>
+         <div class="awards">
+            <div class="awards__title">
+               <img src="/images/awards.png" alt="awards icon" width="30" height="30">
+               <span>{{> title data="Awards" big=true}}</span>
+            </div>
+            <div class="awards__text">
+               {{#each awards}}
+               <span>{{title}}</span>
+               <ul>
+                  <li>Year: {{year}}</li>
+                  <li>Description: {{description}}</li>
+               </ul>
+               {{/each}}
+            </div>
+         </div>
+         <div class="influences">
+            <div class="influences__title">
+               <img src="/images/influence.png" alt="influence icon" width="35" height="35">
+               <span>{{> title data="Influences" big=true}}</span>
+            </div>
+            <div class="influences__text">
+               <span>Influences:</span>
+               <ul>
+                  {{#each influences}}
+                  <li>{{this}}</li>
+                  {{/each}}
+               </ul>
+               <span>Influenced:</span>
+               <ul>
+                  {{#each influenced}}
+                  <li>{{this}}</li>
+                  {{/each}}
+               </ul>
+            </div>
+         </div>
+         <div class="quotes">
+            <div class="influences__title">
+               <img src="/images/quote.png" alt="quote icon" width="30" height="30">
+               <span>{{> title data="Quotes" big=true}}</span>
+            </div>
+            <blockquote class="blockquote">
+               <ul>
+                  {{#each quotes}}
+                  <li>
+                     <q>{{this}}</q>
+                  </li>
+                  {{/each}}
+               </ul>
+            </blockquote>
+         </div>
+         <div class="discoveries">
+            <div class="discoveries__title">
+               <img src="/images/discovery.png" alt="discoveries icon" width="35" height="35">
+               <span>{{> title data="Major discoveries" big=true}}</span>
+            </div>
+            <div class="discoveries__text">
+               {{#each major_discoveries}}
+               <span>{{title}}</span>
+               <ul>
+                  <li>Year: {{year}}</li>
+                  <li>Description: {{description}}</li>
+               </ul>
+               {{/each}}
+            </div>
+         </div>
+         <div class="contributions">
+            <div class="contributions__title">
+               <img src="/images/contributions.png" alt="contributions icon" width="35" height="35">
+               <span>{{> title data="Contributions" big=true}}</span>
+            </div>
+            <div class="contributions__text">
+               {{#with contributions}}
+               <span>{{title}}</span>
+               <ul>
+                  <li>Year: {{year}}</li>
+                  <li>Description: {{description}}</li>
+                  <li>Field: {{field}}</li>
+               </ul>
+               {{/with}}
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+</main>
