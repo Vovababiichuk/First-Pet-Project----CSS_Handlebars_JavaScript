@@ -6,10 +6,11 @@
 <html>
 
 <head>
-   <title>
-      {{page.title}}
-   </title>
    <meta charset='utf-8' />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <title>{{page.title}}</title>
    <link href='css/index.css' rel='stylesheet' />
 </head>
 
@@ -40,7 +41,8 @@
    {{! ↓ ця кострукція показує куди шаблонізатору треба вставляти код з container файлу --}}
    {{{body}}}
 
-   {{> footer}}
+   {{> footer social=footer.social firstname=header.name.firstname lastname=header.name.lastname
+   address=header.address}}
 </body>
 
 </html>
