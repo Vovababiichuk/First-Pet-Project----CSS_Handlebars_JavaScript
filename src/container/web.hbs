@@ -1,0 +1,119 @@
+{{#with web}}
+<main>
+   <section class="web">
+      <div class="container">
+         <div class="web__html">
+            <div class="web__html-title">
+               <img class="web__html-img" src="/images/html.png" alt="html photo" width="200" height="200">
+               <div>
+                  <span class="web__html-name">Name: {{languages.[0].name}}</span>
+                  <span>Version: {{languages.[0].version}}</span>
+                  <span>Description: {{languages.[0].description}}</span>
+               </div>
+            </div>
+            <div class="web__html-elements">
+               <span>{{> title data="Elements" big=true}}</span>
+               <mark>{{languages.[0].elements.[0].name}}</mark>
+               <div class="web__html-attributes">
+                  <span>description: {{languages.[0].elements.[0].description}}</span>
+                  <span>Attributes:</span>
+                  <ul>
+                     <li>{{languages.[0].elements.[0].attributes.[0].name}}</li>
+                     <span>Description: {{languages.[0].elements.[0].attributes.[0].description}}</span>
+                     <li>{{languages.[0].elements.[0].attributes.[1].name}}</li>
+                     <span>Description: {{languages.[0].elements.[0].attributes.[1].description}}</span>
+                  </ul>
+               </div>
+            </div>
+            <div class="web__html-elements">
+               <mark>{{languages.[0].elements.[1].name}}</mark>
+               <div class="web__html-attributes">
+                  <span>description: {{languages.[0].elements.[1].description}}</span>
+                  <span>Attributes:</span>
+                  <ul>
+                     <li>{{languages.[0].elements.[1].attributes.[0].name}}</li>
+                     <span>Description: {{languages.[0].elements.[1].attributes.[0].description}}</span>
+                     <li>{{languages.[0].elements.[1].attributes.[1].name}}</li>
+                     <span>Description: {{languages.[0].elements.[1].attributes.[1].description}}</span>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="web__css">
+            <div class="web__css-title">
+               <img class="web__css-img" src="/images/css.png" alt="css photo" width="200" height="200">
+               <div>
+                  <span class="web__css-name">Name: {{languages.[1].name}}</span>
+                  <span>Version: {{languages.[1].version}}</span>
+                  <span>Description: {{languages.[1].description}}</span>
+               </div>
+            </div>
+            <div class="web__css-properties">
+               <span>{{> title data="Properties" big=true}}</span>
+               <mark>{{languages.[1].properties.[0].name}}</mark>
+               <div class="web__css-attributes">
+                  <span>description: {{languages.[1].properties.[0].description}}</span>
+                  <span>Values:</span>
+                  <ul>
+                     <li>{{languages.[1].properties.[0].values.[0].value}}</li>
+                     <span>Description: {{languages.[1].properties.[0].values.[0].description}}</span>
+                     <li>{{languages.[1].properties.[0].values.[1].value}}</li>
+                     <span>Description: {{languages.[1].properties.[0].values.[1].description}}</span>
+                  </ul>
+               </div>
+            </div>
+            <div class="web__css-elements">
+               <mark>{{languages.[1].properties.[1].name}}</mark>
+               <div class="web__css-attributes">
+                  <span>description: {{languages.[1].properties.[1].description}}</span>
+                  <span>Values:</span>
+                  <ul>
+                     <li>{{languages.[1].properties.[1].values.[0].value}}</li>
+                     <span>Description: {{languages.[1].properties.[1].values.[0].description}}</span>
+                     <li>{{languages.[1].properties.[1].values.[1].value}}</li>
+                     <span>Description: {{languages.[1].properties.[1].values.[1].description}}</span>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="web__js">
+            <div class="web__js-title">
+               <img class="web__js-img" src="/images/js.png" alt="css photo" width="180" height="180">
+               <div>
+                  <span class="web__js-name">Name: {{languages.[2].name}}</span>
+                  <span>Version: {{languages.[2].version}}</span>
+                  <span>Description: {{languages.[2].description}}</span>
+               </div>
+            </div>
+            <div class="web__js-functions">
+               <span>{{> title data="Functions" big=true}}</span>
+               <mark>{{languages.[2].functions.[0].name}}</mark>
+               <div class="web__css-attributes">
+                  <span>description: {{languages.[2].functions.[0].description}}</span>
+                  <span>Parameters:</span>
+                  <ul>
+                     <li>{{languages.[2].functions.[0].parameters.[0].name}}</li>
+                     <li>Type: {{languages.[2].functions.[0].parameters.[0].type}}</li>
+                     <span>Description: {{languages.[2].functions.[0].parameters.[0].description}}</span>
+                  </ul>
+               </div>
+            </div>
+            <div class="web__js-functions">
+               <mark>{{languages.[2].functions.[1].name}}</mark>
+               <div class="web__css-attributes">
+                  <span>description: {{languages.[2].functions.[1].description}}</span>
+                  <span>Parameters:</span>
+                  <ul>
+                     <li>{{languages.[2].functions.[1].parameters.[0].name}}</li>
+                     <li>Type: {{languages.[2].functions.[1].parameters.[0].type}}</li>
+                     <span>Description: {{languages.[2].functions.[1].parameters.[0].description}}</span>
+                  </ul>
+               </div>
+            </div>            
+         </div>        
+      </div>
+   </section>
+</main>
+{{/with}}
