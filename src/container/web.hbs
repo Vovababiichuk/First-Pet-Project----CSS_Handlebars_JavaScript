@@ -6,9 +6,11 @@
             <div class="web__html-title">
                <img class="web__html-img" src="/images/html.png" alt="html photo" width="200" height="200">
                <div>
-                  <span class="web__html-name">Name: {{languages.[0].name}}</span>
-                  <span>Version: {{languages.[0].version}}</span>
-                  <span>Description: {{languages.[0].description}}</span>
+                  {{#with languages.[0]}}
+                     <span class="web__html-name">Name: {{name}}</span>
+                     <span>Version: {{version}}</span>
+                     <span>Description: {{description}}</span>
+                  {{/with}}
                </div>
             </div>
             <div class="web__html-elements">
@@ -18,10 +20,12 @@
                   <span>description: {{languages.[0].elements.[0].description}}</span>
                   <span>Attributes:</span>
                   <ul>
-                     <li>{{languages.[0].elements.[0].attributes.[0].name}}</li>
-                     <span>Description: {{languages.[0].elements.[0].attributes.[0].description}}</span>
-                     <li>{{languages.[0].elements.[0].attributes.[1].name}}</li>
-                     <span>Description: {{languages.[0].elements.[0].attributes.[1].description}}</span>
+                     {{#with languages.[0].elements.[0]}}
+                        <li>{{attributes.[0].name}}</li>
+                        <span>Description: {{attributes.[0].description}}</span>
+                        <li>{{attributes.[1].name}}</li>
+                        <span>Description: {{attributes.[1].description}}</span>
+                     {{/with}}
                   </ul>
                </div>
             </div>
@@ -31,10 +35,12 @@
                   <span>description: {{languages.[0].elements.[1].description}}</span>
                   <span>Attributes:</span>
                   <ul>
-                     <li>{{languages.[0].elements.[1].attributes.[0].name}}</li>
-                     <span>Description: {{languages.[0].elements.[1].attributes.[0].description}}</span>
-                     <li>{{languages.[0].elements.[1].attributes.[1].name}}</li>
-                     <span>Description: {{languages.[0].elements.[1].attributes.[1].description}}</span>
+                     {{#with languages.[0].elements.[1]}}
+                        <li>{{attributes.[0].name}}</li>
+                        <span>Description: {{attributes.[0].description}}</span>
+                        <li>{{attributes.[1].name}}</li>
+                        <span>Description: {{attributes.[1].description}}</span>
+                     {{/with}}
                   </ul>
                </div>
             </div>
@@ -43,9 +49,11 @@
             <div class="web__css-title">
                <img class="web__css-img" src="/images/css.png" alt="css photo" width="200" height="200">
                <div>
-                  <span class="web__css-name">Name: {{languages.[1].name}}</span>
-                  <span>Version: {{languages.[1].version}}</span>
-                  <span>Description: {{languages.[1].description}}</span>
+                  {{#with languages.[1]}}
+                     <span class="web__css-name">Name: {{name}}</span>
+                     <span>Version: {{version}}</span>
+                     <span>Description: {{description}}</span>
+                  {{/with}}
                </div>
             </div>
             <div class="web__css-properties">
@@ -55,10 +63,12 @@
                   <span>description: {{languages.[1].properties.[0].description}}</span>
                   <span>Values:</span>
                   <ul>
-                     <li>{{languages.[1].properties.[0].values.[0].value}}</li>
-                     <span>Description: {{languages.[1].properties.[0].values.[0].description}}</span>
-                     <li>{{languages.[1].properties.[0].values.[1].value}}</li>
-                     <span>Description: {{languages.[1].properties.[0].values.[1].description}}</span>
+                     {{#with languages.[1].properties.[0]}}
+                        <li>{{values.[0].value}}</li>
+                        <span>Description: {{values.[0].description}}</span>
+                        <li>{{values.[1].value}}</li>
+                        <span>Description: {{values.[1].description}}</span>
+                     {{/with}}
                   </ul>
                </div>
             </div>
@@ -68,10 +78,12 @@
                   <span>description: {{languages.[1].properties.[1].description}}</span>
                   <span>Values:</span>
                   <ul>
-                     <li>{{languages.[1].properties.[1].values.[0].value}}</li>
-                     <span>Description: {{languages.[1].properties.[1].values.[0].description}}</span>
-                     <li>{{languages.[1].properties.[1].values.[1].value}}</li>
-                     <span>Description: {{languages.[1].properties.[1].values.[1].description}}</span>
+                     {{#with languages.[1].properties.[1]}}
+                        <li>{{values.[0].value}}</li>
+                        <span>Description: {{values.[0].description}}</span>
+                        <li>{{values.[1].value}}</li>
+                        <span>Description: {{values.[1].description}}</span>
+                     {{/with}}
                   </ul>
                </div>
             </div>
@@ -80,9 +92,11 @@
             <div class="web__js-title">
                <img class="web__js-img" src="/images/js.png" alt="css photo" width="180" height="180">
                <div>
-                  <span class="web__js-name">Name: {{languages.[2].name}}</span>
-                  <span>Version: {{languages.[2].version}}</span>
-                  <span>Description: {{languages.[2].description}}</span>
+                  {{#with languages.[2]}}
+                     <span class="web__js-name">Name: {{name}}</span>
+                     <span>Version: {{version}}</span>
+                     <span>Description: {{description}}</span>
+                  {{/with}}
                </div>
             </div>
             <div class="web__js-functions">
@@ -92,9 +106,11 @@
                   <span>description: {{languages.[2].functions.[0].description}}</span>
                   <span>Parameters:</span>
                   <ul>
-                     <li>{{languages.[2].functions.[0].parameters.[0].name}}</li>
-                     <li>Type: {{languages.[2].functions.[0].parameters.[0].type}}</li>
-                     <span>Description: {{languages.[2].functions.[0].parameters.[0].description}}</span>
+                     {{#with languages.[2].functions.[0].parameters.[0]}}
+                        <li>{{name}}</li>
+                        <li>Type: {{type}}</li>
+                        <span>Description: {{description}}</span>
+                     {{/with}}
                   </ul>
                </div>
             </div>
@@ -104,9 +120,11 @@
                   <span>description: {{languages.[2].functions.[1].description}}</span>
                   <span>Parameters:</span>
                   <ul>
-                     <li>{{languages.[2].functions.[1].parameters.[0].name}}</li>
-                     <li>Type: {{languages.[2].functions.[1].parameters.[0].type}}</li>
-                     <span>Description: {{languages.[2].functions.[1].parameters.[0].description}}</span>
+                     {{#with languages.[2].functions.[1].parameters.[0]}}
+                        <li>{{name}}</li>
+                        <li>Type: {{type}}</li>
+                        <span>Description: {{description}}</span>
+                     {{/with}}
                   </ul>
                </div>
             </div>            

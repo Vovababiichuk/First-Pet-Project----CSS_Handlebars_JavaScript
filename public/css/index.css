@@ -283,6 +283,12 @@ li {
   object-fit: cover;
 }
 
+.web {
+  background-color: #d8f5fe;
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+}
+
 .web__html,
 .web__css,
 .web__js {
@@ -308,7 +314,8 @@ li {
 .web__html-elements span,
 .web__html-properties span,
 .web__css-elements span,
-.web__js-functions span {
+.web__js-functions span,
+.web__css-attributes span {
   display: block;
   margin-bottom: 8px;
 }
