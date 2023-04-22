@@ -1,137 +1,139 @@
 {{#with program}}
 <main>
-   <section class="person">
+   <section class="program">
       <div class="container">
-         <div class="about">
-            <img class="about__img" src="/images/Emma-Johnson.jpg" alt="Emma Johnson photo" width="300" height="250">
-            <div class="about__content">
-               <h1 class="about__name">{{name}}</h1>
-               <span class="about__age">Age: {{age}}</span>
-               <span class="about__gender">Gender: {{gender}}</span>
-               <em>Address:</em>
-               <address class="about__address">
-                  <ul class="about__text">
-                     {{#with address}}
-                     <li>Street: {{street}}</li>
+         {{#with excursion}}
+         <div class="excursion">
+            <img class="excursion__img" src="/images/paris/photo-paris.png" alt="photo paris tower" width="250"
+               height="220">
+            <div class="excursion__content">
+               <h1 class="excursion__name">{{name}}</h1>
+               <span>Location:</span>
+               <ul>
+                  {{#with location}}
+                  <li>{{city}}</li>
+                  <li>{{country}}</li>
+                  {{/with}}
+               </ul>
+               <span class="excursion__age">Date: {{date}}</span>
+            </div>
+         </div>
+         <div class="program">
+            <div class="program__museum">
+               <div class="program__museum-title">
+                  <img src="/images/program.png" alt="program icon" width="30" height="30">
+                  <span>{{> title data="Program" big=true}}</span>
+               </div>
+               <div class="program__museum-visit">
+                  <img class="program__museum-img" src="/images/paris/museum.jpg" alt="museum photo" width="100"
+                     height="100">
+                  <div class="program__museum-block">
+                     <h3>{{program.[0].name}}</h3>
+                     <ul>
+                        <li>Type: {{program.[0].type}}</li>
+                        <li>Duration: {{program.[0].duration}}</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="program__museum-details">
+                  {{#with program.[0].details.museum}}
+                  <em>Details:</em>
+                  <span>Name: {{name}}</span>
+                  <span>Location:</span>
+                  <ul>
+                     {{#with location}}
+                     <li>Address: {{address}}</li>
                      <li>City: {{city}}</li>
-                     <li>State: {{state}}</li>
-                     <li>Zip: {{zip}}</li>
                      <li>Country: {{country}}</li>
                      {{/with}}
                   </ul>
-               </address>
+                  <span>Exhibits:</span>
+                  <ul>
+                     <em>{{exhibits.[0].name}}</em>
+                     <li>{{exhibits.[0].artist}}</li>
+                     <li>{{exhibits.[0].description}}</li>
+                     {{#if exhibits.[0].audio_guide}}
+                     <li>Audio-guide: Yes</li>
+                     {{else}}
+                     <li>Audio-guide: No</li>
+                     {{/if}}
+                  </ul>
+                  <ul>
+                     <em>{{exhibits.[1].name}}</em>
+                     {{#unless exhibits.[1].artist}}
+                     <li>Artist: unknown</li>
+                     {{/unless}}
+                     <li>{{exhibits.[1].description}}</li>
+                     {{#if exhibits.[1].audio_guide}}
+                     <li>Audio-guide: Yes</li>
+                     {{else}}
+                     <li>Audio-guide: No</li>
+                     {{/if}}
+                  </ul>
+                  {{/with}}
+                  <span>Guide:</span>
+                  <div class="program__museum-guide">
+                     <img class="program__museum-img" src="/images/guid-museum.jpg" alt="guid photo" width="75"
+                        height="75">
+                     <div>
+                        {{#with program.[0].details.guide}}
+                        <b>{{name}}</b>
+                        <span>Language: {{language}}</span>
+                        <span>Rating: {{rating}}</span>
+                        {{/with}}
+                     </div>
+                  </div>
+               </div>
             </div>
-         </div>
-         <div class="education">
-            <div class="education__title">
-               <img src="/images/education.png" alt="education icon" width="30" height="30">
-               <span>{{> title data="My education" big=true}}</span>
-            </div>
-            <div class="education__content">
-               {{#each education}}
-               <ul>
-                  <li>Degree: {{degree}}</li>
-                  <li>Major: {{major}}</li>
-                  <li>University: {{university}}</li>
-                  <li>Graduation-Year: {{graduationYear}}</li>
-               </ul>
-               {{/each}}
-            </div>
-         </div>
-         <div class="experience">
-            <div class="experience__title">
-               <img src="/images/experience.png" alt="experience icon" width="35" height="35">
-               <span>{{> title data="My experience" big=true}}</span>
-            </div>
-            <div class="experience__inner">
-               {{#each workExperience}}
-                  <div class="experience__company">
-                     <span>Company: {{company}}</span>
-                     <span>Position: {{title}}</span>
-                     <span>Start-date: {{startDate}}</span>
-                     <span>End-date: {{endDate}}</span>
-                     <span>Responsibilities:</span>
+            <div class="program__show">
+               <div class="program__show-visit">
+                  <img class="program__museum-img" src="/images/paris/show.jpg" alt="show photo" width="100"
+                     height="100">
+                  <div class="program__museum-block">
+                     <h3>{{program.[1].name}}</h3>
                      <ul>
-                        {{#each responsibilities}}
-                           <li>{{this}}</li>
-                        {{/each}}
+                        <li>Type: {{program.[1].type}}</li>
+                        <li>Duration: {{program.[1].duration}}</li>
                      </ul>
-                     <span>Year-founded: {{year_founded}}</span>
-                     <span>Industry: {{industry}}</span>
                   </div>
-                  <div class="employees">
-                     <span class="employee__title">{{> title data="Employees:"}}</span>
-                     {{#each employees}}
-                        <div class="employee__inner">
-                           <img src="/images/John-Smith.jpg" alt="John Smith photo" width="90" height="90">
-                           <div class="employee-top">
-                              <h4>{{name}}</h4>
-                              <span>Position: {{position}}</span>
-                              <span>Department: {{department}}</span>
-                           </div>
-                        </div>
-                        <div class="employee__project">
-                           {{#each projects}}
-                              <em>Projects:</em>
-                              <span>{{name}}</span>
-                              <span>Description: {{description}}</span>
-                              <span>Status: {{status}}</span>
-                              <em>Teams:</em>
-                              <div class="employee__teams">
-                                 {{#each teams}}
-                                    <span>{{team_name}}</span>
-                                    {{#with team_leader}}
-                                       <span>{{title}}: {{name}} ({{email}})</span>
-                                    {{/with}}
-                                    <em>Team-members:</em>
-                                    {{#each team_members}}
-                                       <div class="employee__members">
-                                          <img src="/images/Alice-Johnson.jpg" alt="John Smith photo" width="90" height="90">
-                                          <div class="employee__members-top">
-                                             <h4>{{name}}</h4>
-                                             <span>Position: {{title}}</span>
-                                             <span>Email: {{email}}</span>
-                                             <span>Skills: {{skills}}</span>
-                                          </div>
-                                       </div>
-                                       <div>
-                                          <em>Projects:</em>
-                                          {{#each projects}}
-                                             <span>{{name}}</span>
-                                             <span>Description: {{description}}</span>
-                                             <span>Technologies:</span>
-                                             <ul>
-                                                {{#each technologies}}
-                                                <li>{{this}}</li>
-                                                {{/each}}
-                                             </ul>
-                                             <em>Team-members:</em>
-                                             <div class="employee__members-down">
-                                                <img src="/images/Bob-Lee.jpg" alt="Bob Lee photo" width="90" height="90">
-                                                <div>
-                                                   <h4>{{team_members.[0].name}}</h4>
-                                                   <span>Position: {{team_members.[0].title}}</span>
-                                                </div>
-                                             </div>
-                                             <div class="employee__members-down">
-                                                <img src="/images/Cindy-Chen.jpg" alt="Cindy Chen photo" width="90" height="90">
-                                                <div>
-                                                   <h4>{{team_members.[1].name}}</h4>
-                                                   <span>Position: {{team_members.[1].title}}</span>
-                                                </div>
-                                             </div>
-                                          {{/each}}
-                                       </div>
-                                    {{/each}}
-                                 {{/each}}
-                              </div>
-                           {{/each}}
-                        </div>
-                     {{/each}}
+               </div>
+               <div class="program__show-details">
+                  <em>Details:</em>
+                  {{#with program.[1].details.venue}}
+                  <span>Venue: {{name}}</span>
+                  <span>Location:</span>
+                  <ul>
+                     {{#with location}}
+                     <li>Address: {{address}}</li>
+                     <li>City: {{city}}</li>
+                     <li>Country: {{country}}</li>
+                     {{/with}}
+                  </ul>
+                  {{/with}}
+                  {{#with program.[1].details}}
+                  <span>Performers:</span>
+                  <ul>
+                     <em>{{performers.[0].name}}</em>
+                     <li>Type: {{performers.[0].type}}</li>
+                     <em>{{performers.[1].name}}</em>
+                     <li>Type: {{performers.[1].type}}</li>
+                  </ul>
+                  {{/with}}
+                  <span>Guide:</span>
+                  <div class="program__show-guide">
+                     <img class="program__show-img" src="/images/guid-show.jpg" alt="guid photo" width="75" height="75">
+                     <div>
+                        {{#with program.[1].details.guide}}
+                        <b>{{name}}</b>
+                        <span>Language: {{language}}</span>
+                        <span>Rating: {{rating}}</span>
+                        {{/with}}
+                     </div>
                   </div>
-               {{/each}}
+               </div>
             </div>
          </div>
+         {{/with}}
       </div>
    </section>
 </main>
