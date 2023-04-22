@@ -1,0 +1,138 @@
+{{#with program}}
+<main>
+   <section class="person">
+      <div class="container">
+         <div class="about">
+            <img class="about__img" src="/images/Emma-Johnson.jpg" alt="Emma Johnson photo" width="300" height="250">
+            <div class="about__content">
+               <h1 class="about__name">{{name}}</h1>
+               <span class="about__age">Age: {{age}}</span>
+               <span class="about__gender">Gender: {{gender}}</span>
+               <em>Address:</em>
+               <address class="about__address">
+                  <ul class="about__text">
+                     {{#with address}}
+                     <li>Street: {{street}}</li>
+                     <li>City: {{city}}</li>
+                     <li>State: {{state}}</li>
+                     <li>Zip: {{zip}}</li>
+                     <li>Country: {{country}}</li>
+                     {{/with}}
+                  </ul>
+               </address>
+            </div>
+         </div>
+         <div class="education">
+            <div class="education__title">
+               <img src="/images/education.png" alt="education icon" width="30" height="30">
+               <span>{{> title data="My education" big=true}}</span>
+            </div>
+            <div class="education__content">
+               {{#each education}}
+               <ul>
+                  <li>Degree: {{degree}}</li>
+                  <li>Major: {{major}}</li>
+                  <li>University: {{university}}</li>
+                  <li>Graduation-Year: {{graduationYear}}</li>
+               </ul>
+               {{/each}}
+            </div>
+         </div>
+         <div class="experience">
+            <div class="experience__title">
+               <img src="/images/experience.png" alt="experience icon" width="35" height="35">
+               <span>{{> title data="My experience" big=true}}</span>
+            </div>
+            <div class="experience__inner">
+               {{#each workExperience}}
+                  <div class="experience__company">
+                     <span>Company: {{company}}</span>
+                     <span>Position: {{title}}</span>
+                     <span>Start-date: {{startDate}}</span>
+                     <span>End-date: {{endDate}}</span>
+                     <span>Responsibilities:</span>
+                     <ul>
+                        {{#each responsibilities}}
+                           <li>{{this}}</li>
+                        {{/each}}
+                     </ul>
+                     <span>Year-founded: {{year_founded}}</span>
+                     <span>Industry: {{industry}}</span>
+                  </div>
+                  <div class="employees">
+                     <span class="employee__title">{{> title data="Employees:"}}</span>
+                     {{#each employees}}
+                        <div class="employee__inner">
+                           <img src="/images/John-Smith.jpg" alt="John Smith photo" width="90" height="90">
+                           <div class="employee-top">
+                              <h4>{{name}}</h4>
+                              <span>Position: {{position}}</span>
+                              <span>Department: {{department}}</span>
+                           </div>
+                        </div>
+                        <div class="employee__project">
+                           {{#each projects}}
+                              <em>Projects:</em>
+                              <span>{{name}}</span>
+                              <span>Description: {{description}}</span>
+                              <span>Status: {{status}}</span>
+                              <em>Teams:</em>
+                              <div class="employee__teams">
+                                 {{#each teams}}
+                                    <span>{{team_name}}</span>
+                                    {{#with team_leader}}
+                                       <span>{{title}}: {{name}} ({{email}})</span>
+                                    {{/with}}
+                                    <em>Team-members:</em>
+                                    {{#each team_members}}
+                                       <div class="employee__members">
+                                          <img src="/images/Alice-Johnson.jpg" alt="John Smith photo" width="90" height="90">
+                                          <div class="employee__members-top">
+                                             <h4>{{name}}</h4>
+                                             <span>Position: {{title}}</span>
+                                             <span>Email: {{email}}</span>
+                                             <span>Skills: {{skills}}</span>
+                                          </div>
+                                       </div>
+                                       <div>
+                                          <em>Projects:</em>
+                                          {{#each projects}}
+                                             <span>{{name}}</span>
+                                             <span>Description: {{description}}</span>
+                                             <span>Technologies:</span>
+                                             <ul>
+                                                {{#each technologies}}
+                                                <li>{{this}}</li>
+                                                {{/each}}
+                                             </ul>
+                                             <em>Team-members:</em>
+                                             <div class="employee__members-down">
+                                                <img src="/images/Bob-Lee.jpg" alt="Bob Lee photo" width="90" height="90">
+                                                <div>
+                                                   <h4>{{team_members.[0].name}}</h4>
+                                                   <span>Position: {{team_members.[0].title}}</span>
+                                                </div>
+                                             </div>
+                                             <div class="employee__members-down">
+                                                <img src="/images/Cindy-Chen.jpg" alt="Cindy Chen photo" width="90" height="90">
+                                                <div>
+                                                   <h4>{{team_members.[1].name}}</h4>
+                                                   <span>Position: {{team_members.[1].title}}</span>
+                                                </div>
+                                             </div>
+                                          {{/each}}
+                                       </div>
+                                    {{/each}}
+                                 {{/each}}
+                              </div>
+                           {{/each}}
+                        </div>
+                     {{/each}}
+                  </div>
+               {{/each}}
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
+{{/with}}
