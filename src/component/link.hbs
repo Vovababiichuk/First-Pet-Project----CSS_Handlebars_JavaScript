@@ -1,9 +1,10 @@
 <a href="{{href}}" {{#if blank}} target="blank" {{/if}}>{{text}}</a>
 
 {{#unless noLine}}
-   {{#if line}}
-      ---
-   {{else}}
-      /
-   {{/if}}
+{{#if line}}
+---
+{{else}}
+/
+{{/if}}
 {{/unless}}
+

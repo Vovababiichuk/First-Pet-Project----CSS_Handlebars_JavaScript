@@ -219,7 +219,6 @@ li {
   border-radius: 50%;
 }
 
-
 .program__museum-guide,
 .program__show-guide {
   display: flex;
@@ -344,6 +343,7 @@ li {
   padding-top: 15px;
 }
 
+<<<<<<< HEAD
 /* =========mac============ */
 
 .mac__top span {
@@ -362,3 +362,82 @@ li {
 .inside {
   margin: 10px 0;
 }
+=======
+<<<<<<< HEAD
+/* ============= car ========= */
+
+.car__top-text span {
+  display: block;
+}
+
+.car__content-features b,
+.car__content-engine b,
+.car__content-economy b,
+.car__content-price b {
+  font-size: 26px;
+  padding: 10px 0;
+  display: block;
+}
+
+.interior i,
+.exterior i {
+  text-transform: uppercase;
+  display: block;
+}
+
+.alert {
+  margin: 5px;
+}
+
+.alert-warning,
+.alert-info,
+.alert-primary {
+  width: 300px;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: 600;
+=======
+/* ===============JS================= */
+
+.js__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.js__top h1 {
+  color: #014aff;
+}
+
+.js__top i {
+  display: block;
+}
+
+.js__subtitle {
+  color: #00b3ff;
+}
+
+.js__content b {
+  font-size: 22px;
+  padding: 8px;
+  display: block;
+}
+
+.alert-info,
+.alert-warning,
+.alert-danger,
+.alert-success {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.badge {
+  margin-bottom: 4px;
+}
+
+.list-group {
+   width: 300px;
+>>>>>>> ceb4c46368fc9df0a6fa22e3cbed91cc28be3f7f
+}
+>>>>>>> c8862e2c99e4e21ea60002ee81af9b72f550e49e
