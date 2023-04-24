@@ -219,7 +219,6 @@ li {
   border-radius: 50%;
 }
 
-
 .program__museum-guide,
 .program__show-guide {
   display: flex;
@@ -342,4 +341,45 @@ li {
 .web__html-attributes,
 .web__css-attributes {
   padding-top: 15px;
+}
+
+/* ===============JS================= */
+
+.js__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.js__top h1 {
+  color: #014aff;
+}
+
+.js__top i {
+  display: block;
+}
+
+.js__subtitle {
+  color: #00b3ff;
+}
+
+.js__content b {
+  font-size: 22px;
+  padding: 8px;
+  display: block;
+}
+
+.alert-info,
+.alert-warning,
+.alert-danger,
+.alert-success {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.badge {
+  margin-bottom: 4px;
+}
+
+.list-group {
+   width: 300px;
 }
