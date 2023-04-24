@@ -344,6 +344,26 @@ li {
 }
 
 <<<<<<< HEAD
+/* =========mac============ */
+
+.mac__top span {
+  display: block;
+}
+
+.mac__content b {
+  font-size: 26px;
+  padding: 15px 0;
+}
+
+.mac__content-text {
+  display: block;
+}
+
+.inside {
+  margin: 10px 0;
+}
+=======
+<<<<<<< HEAD
 /* ============= car ========= */
 
 .car__top-text span {
@@ -420,3 +440,4 @@ li {
    width: 300px;
 >>>>>>> ceb4c46368fc9df0a6fa22e3cbed91cc28be3f7f
 }
+>>>>>>> c8862e2c99e4e21ea60002ee81af9b72f550e49e
