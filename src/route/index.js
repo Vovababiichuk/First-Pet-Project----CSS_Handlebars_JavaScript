@@ -258,9 +258,6 @@ router.get('/work', function (req, res) {
    })
 })
 
-<<<<<<< HEAD
-
-=======
 // ================================================================
 
 router.get('/person', function (req, res) {
