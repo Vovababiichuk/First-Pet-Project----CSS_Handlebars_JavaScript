@@ -343,83 +343,7 @@ li {
   padding-top: 15px;
 }
 
-<<<<<<< HEAD
-/* ================facebook================ */
-
-.card-body span{
-  display: block;
-}
-
-.facebook h2 {
-  margin: 10px 0;
-  text-decoration: underline;
-}
-
-.facebook__users-amy img {
-  object-fit: cover;
-}
-
-.facebook__users-groups h4 {
-  text-decoration: underline;
-}
-=======
-<<<<<<< HEAD
-/* =========mac============ */
-
-.mac__top span {
-  display: block;
-}
-
-.mac__content b {
-  font-size: 26px;
-  padding: 15px 0;
-}
-
-.mac__content-text {
-  display: block;
-}
-
-.inside {
-  margin: 10px 0;
-}
-=======
-<<<<<<< HEAD
-/* ============= car ========= */
-
-.car__top-text span {
-  display: block;
-}
-
-.car__content-features b,
-.car__content-engine b,
-.car__content-economy b,
-.car__content-price b {
-  font-size: 26px;
-  padding: 10px 0;
-  display: block;
-}
-
-.interior i,
-.exterior i {
-  text-transform: uppercase;
-  display: block;
-}
-
-.alert {
-  margin: 5px;
-}
-
-.alert-warning,
-.alert-info,
-.alert-primary {
-  width: 300px;
-}
-
-.total {
-  font-size: 22px;
-  font-weight: 600;
-=======
-/* ===============JS================= */
+/* =================js================== */
 
 .js__title {
   display: flex;
@@ -450,6 +374,7 @@ li {
 .alert-success {
   display: inline-block;
   font-size: 14px;
+  width: 300px;
 }
 
 .badge {
@@ -457,8 +382,81 @@ li {
 }
 
 .list-group {
-   width: 300px;
->>>>>>> ceb4c46368fc9df0a6fa22e3cbed91cc28be3f7f
+  width: 300px;
 }
->>>>>>> c8862e2c99e4e21ea60002ee81af9b72f550e49e
->>>>>>> a9aae1df6e4dc8d271095ed179d040daf888bb13
+
+/* ===========================car============== */
+
+.car__top-text span {
+  display: block;
+}
+
+.car__content-features b,
+.car__content-engine b,
+.car__content-economy b,
+.car__content-price b {
+  font-size: 26px;
+  padding: 10px 0;
+  display: block;
+}
+
+.interior i,
+.exterior i {
+  text-transform: uppercase;
+  display: block;
+}
+
+.alert {
+  margin: 5px;
+  display: block;
+}
+
+.alert-warning,
+.alert-info,
+.alert-primary {
+  width: 300px;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* =========mac============ */
+
+.mac__top span {
+  display: block;
+}
+
+.mac__content b {
+  font-size: 26px;
+  padding: 15px 0;
+}
+
+.mac__content-text {
+  display: block;
+}
+
+.inside {
+  margin: 10px 0;
+}
+
+/* ================facebook================ */
+
+.card-body span {
+  display: block;
+}
+
+.facebook h2 {
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.facebook__users-amy img {
+  object-fit: cover;
+}
+
+.facebook__users-groups h4 {
+  text-decoration: underline;
+}
+
