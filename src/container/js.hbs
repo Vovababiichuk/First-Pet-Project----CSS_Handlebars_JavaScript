@@ -1,0 +1,113 @@
+<main>
+   <section class="js">
+      <div class="container">
+         <div class="js__top">
+            <div class="js__title">
+               <img src="/images/js.png" alt="logo" height="30">
+               <h1>{{name}}</h1>
+            </div>
+            <span class="js__subtitle">Description:</span>
+            <span>{{description}}</span>
+            <i>History:</i>
+            <ul>
+               {{#with history}}
+               <li>
+                  <span class="js__subtitle">Year:</span>
+                  {{year}}
+               </li>
+               <li>
+                  <span class="js__subtitle">Founder:</span>
+                  {{founder}}
+               </li>
+               {{/with}}
+            </ul>
+         </div>
+         <div class="js__content">
+            <div class="js__content-types">
+               <b>Types</b>
+               <div class="alert alert-info" role="alert">
+                  <ul>
+                     {{#each types}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="js__content-syntax">
+               <b>Syntax</b>
+               {{#with syntax}}
+               <div>
+                  <span class="badge text-bg-primary">Variables</span>
+                  <span>{{variables}}</span>
+               </div>
+               <div>
+                  <span class="badge text-bg-success">Functions</span>
+                  <span>{{functions}}</span>
+               </div>
+               <div>
+                  <span class="badge text-bg-danger">Conditionals</span>
+                  <span>{{conditionals}}</span>
+               </div>
+               <div>
+                  <span class="badge text-bg-warning">Loops</span>
+                  <span>{{loops}}</span>
+               </div>
+               <div>
+                  <span class="badge text-bg-info">Classes</span>
+                  <span>{{classes}}</span>
+               </div>
+               {{/with}}
+            </div>
+            <div class="js__content-features">
+               <b>Features</b>
+               <div class="alert alert-warning" role="alert">
+                  <ul>
+                     {{#each features}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="js__content-libraries">
+               <b>Libraries</b>
+               <div class="alert alert-danger" role="alert">
+                  <ul>
+                     {{#each libraries}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="js__content-tools">
+               <b>Tools</b>
+               <div class="alert alert-success" role="alert">
+                  <ul>
+                     {{#each tools}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="js__content-community">
+               <b>Community</b>
+               <div>
+                  <span>{{community.[0].type}}:</span>
+                  <button type="button" class="btn btn-link">{{community.[0].name}}</button>
+               </div>
+               <div>
+                  <span>{{community.[1].type}}:</span>
+                  <button type="button" class="btn btn-link">{{community.[1].name}}</button>
+               </div>
+               <div>
+                  <span>{{community.[2].type}}:</span>
+                  <button type="button" class="btn btn-link">{{community.[2].name}}</button>
+               </div>
+               <div>
+                  <span>{{community.[3].type}}:</span>
+                  <button type="button" class="btn btn-link">{{community.[3].name}}</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
