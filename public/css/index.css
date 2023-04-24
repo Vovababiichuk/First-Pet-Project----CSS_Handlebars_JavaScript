@@ -343,3 +343,22 @@ li {
 .web__css-attributes {
   padding-top: 15px;
 }
+
+/* =========mac============ */
+
+.mac__top span {
+  display: block;
+}
+
+.mac__content b {
+  font-size: 26px;
+  padding: 15px 0;
+}
+
+.mac__content-text {
+  display: block;
+}
+
+.inside {
+  margin: 10px 0;
+}
