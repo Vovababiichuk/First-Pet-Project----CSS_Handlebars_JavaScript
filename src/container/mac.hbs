@@ -1,0 +1,145 @@
+<main>
+   <section class="mac">
+      <div class="container">
+         <div class="mac__top">
+            <h1>{{name}}</h1>
+            <img src="./images/macbook.jpg" alt="macbook photo" height="200">
+            <span>Description: {{description}}</span>
+            <span>Price: {{price}}</span>
+            <span>Category: {{category}}</span>
+         </div>
+         {{#with features}}
+         <div class="mac__content">
+            <b>Features</b>
+            <div class="mac__content-processor">
+               <span class="badge text-bg-info inside">Processor</span>
+               <ul>
+                  {{#with processor}}
+                  <li>Brand: {{brand}}</li>
+                  <li>Model: {{model}}</li>
+                  <li>Speed: {{speed}}</li>
+                  <li>Cores: {{cores}}</li>
+                  <li>Cache: {{cache}}</li>
+                  {{/with}}
+               </ul>
+            </div>
+            <div class="mac__content-memory">
+               <span class="badge text-bg-warning inside">Memory</span>
+               <ul>
+                  {{#with memory}}
+                  <li>Type: {{type}}</li>
+                  <li>Size: {{size}}</li>
+                  <li>Speed: {{speed:}}</li>
+                  {{/with}}
+               </ul>
+            </div>
+            <div class="mac__content-storage">
+               <span class="badge text-bg-success inside">Storage</span>
+               <ul>
+                  {{#with storage}}
+                  <li>Type: {{type}}</li>
+                  <li>Size: {{size}}</li>
+                  {{/with}}
+               </ul>
+            </div>
+            <div class="mac__content-display">
+               <span class="badge text-bg-primary inside">Display</span>
+               <ul>
+                  {{#with display}}
+                  <li>Size: {{size}}</li>
+                  <li>Resolution: {{resolution}}</li>
+                  <li>Technology: {{technology}}</li>
+                  <li>Color-space: {{color_space}}</li>
+                  <li>Brightness: {{brightness}}</li>
+                  <li>Refresh-rate: {{refresh_rate}}</li>
+                  {{/with}}
+               </ul>
+            </div>
+            <div class="mac__content-graphics">
+               <span class="badge text-bg-danger inside">Graphics</span>
+               <ul>
+                  {{#with graphics}}
+                  <li>Brand: {{brand}}</li>
+                  <li>Model: {{model}}</li>
+                  <li>Memory: {{memory}}</li>
+                  {{/with}}
+               </ul>
+
+            </div>
+            <div class="mac__content-ports">
+               <span class="badge text-bg-dark inside">Ports</span>
+               {{#with ports.[0]}}
+               <span class="mac__content-text">{{type}}</span>
+               <ul>
+                  <li>Count: {{count}}</li>
+                  <li>Features:</li>
+                  <ul>
+                     {{#each features}}
+                     <li>{{this}}</li>
+                     {{/each}}
+                  </ul>
+               </ul>
+               {{/with}}
+               <span class="badge text-bg-dark inside">Ports</span>
+               {{#with ports.[1]}}
+               <span class="mac__content-text">{{type}}</span>
+               <ul>
+                  <li>Count: {{count}}</li>
+               </ul>
+               {{/with}}
+            </div>
+            <div class="mac__content-battery">
+               <span class="badge text-bg-warning inside">Battery</span>
+               <ul>
+                  {{#with battery}}
+                  <li>Type: {{type}}</li>
+                  <li>Capacity: {{capacity}}</li>
+                  <li>Life: {{life}}</li>
+                  {{/with}}
+               </ul>
+            </div>
+            <div class="mac__content-weight">
+               <span class="badge text-bg-success inside">Weight</span>
+               <span class="mac__content-text">{{weight}}</span>
+            </div>
+            <div class="mac__content-dimensions">
+               <span class="badge text-bg-danger inside">Dimensions</span>
+               <ul>
+                  {{#with dimensions}}
+                  <li>Height: {{height}}</li>
+                  <li>Width: {{width}}</li>
+                  <li>Depth: {{depth}}</li>
+                  {{/with}}
+               </ul>
+
+            </div>
+            <div class="mac__content-system">
+               <span class="badge text-bg-primary inside">Operating system</span>
+               <span class="mac__content-text">{{operating_system}}</span>
+            </div>
+            <div class="mac__content-accessories">
+               <span class="badge text-bg-warning inside">Accessories</span>
+               {{#with accessories.[0]}}
+               <span class="mac__content-text">{{name}}</span>
+               <ul>
+                  <li>Price: {{price}}</li>
+               </ul>
+               {{/with}}
+               {{#with accessories.[1]}}
+               <span class="mac__content-text">{{name}}</span>
+               <ul>
+                  <li>Price: {{price}}</li>
+               </ul>
+               {{/with}}
+               {{#with accessories.[2]}}
+               <span class="mac__content-text">{{name}}</span>
+               <ul>
+                  <li>Price: {{price}}</li>
+               </ul>
+               {{/with}}
+            </div>
+         </div>
+         {{/with}}
+      </div>
+   </section>
+</main>
