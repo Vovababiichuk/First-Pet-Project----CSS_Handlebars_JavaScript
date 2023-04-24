@@ -343,6 +343,42 @@ li {
   padding-top: 15px;
 }
 
+<<<<<<< HEAD
+/* ============= car ========= */
+
+.car__top-text span {
+  display: block;
+}
+
+.car__content-features b,
+.car__content-engine b,
+.car__content-economy b,
+.car__content-price b {
+  font-size: 26px;
+  padding: 10px 0;
+  display: block;
+}
+
+.interior i,
+.exterior i {
+  text-transform: uppercase;
+  display: block;
+}
+
+.alert {
+  margin: 5px;
+}
+
+.alert-warning,
+.alert-info,
+.alert-primary {
+  width: 300px;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: 600;
+=======
 /* ===============JS================= */
 
 .js__title {
@@ -382,4 +418,5 @@ li {
 
 .list-group {
    width: 300px;
+>>>>>>> ceb4c46368fc9df0a6fa22e3cbed91cc28be3f7f
 }
