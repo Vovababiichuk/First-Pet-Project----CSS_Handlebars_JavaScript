@@ -225,7 +225,8 @@ router.get('/work', function (req, res) {
                   {
                      name: 'Resume',
                      url: 'http://volodymyr-about-me.mypressonline.com/',
-                     about: 'Airbnb competitor. High-load application for searching apartments.',
+                     about:
+                        'Airbnb competitor. High-load application for searching apartments.',
                      stacks: [
                         {
                            name: 'React.js',

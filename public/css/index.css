@@ -27,14 +27,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  /* padding: 0 10px; */
-  margin: 0 auto;
+main,
+header,
+footer,
+nav {
+  margin: 15px;
 }
 
-/* ================================ */
+section {
+  padding: 16px;
+}
 
 h2 {
   margin-bottom: 15px;
