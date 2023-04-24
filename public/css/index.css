@@ -219,7 +219,6 @@ li {
   border-radius: 50%;
 }
 
-
 .program__museum-guide,
 .program__show-guide {
   display: flex;
@@ -342,4 +341,40 @@ li {
 .web__html-attributes,
 .web__css-attributes {
   padding-top: 15px;
+}
+
+/* ============= car ========= */
+
+.car__top-text span {
+  display: block;
+}
+
+.car__content-features b,
+.car__content-engine b,
+.car__content-economy b,
+.car__content-price b {
+  font-size: 26px;
+  padding: 10px 0;
+  display: block;
+}
+
+.interior i,
+.exterior i {
+  text-transform: uppercase;
+  display: block;
+}
+
+.alert {
+  margin: 5px;
+}
+
+.alert-warning,
+.alert-info,
+.alert-primary {
+  width: 300px;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: 600;
 }
