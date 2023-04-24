@@ -1,10 +1,30 @@
 html {
-  max-width: 720px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 body {
   margin: 32px;
   background: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 main,
@@ -28,4 +48,298 @@ footer em {
 
 li {
   margin-bottom: 5px;
+}
+
+/* =============================== */
+
+.person,
+.program {
+  background-color: rgb(255, 247, 237);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.about,
+.excursion {
+  display: flex;
+}
+
+.about__img,
+.excursion__img {
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 40px;
+}
+
+.about__name,
+.excursion__name {
+  font-size: 30px;
+}
+
+.about__content span,
+.experience span,
+.excursion__content span {
+  display: block;
+  margin-bottom: 8px;
+  /* color: #757575; */
+}
+
+.about__content h1 {
+  margin: 0 0 10px 0;
+}
+
+.education__title,
+.program__title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.education__content li {
+  list-style-type: none;
+}
+.education__content ul {
+  padding-left: 25px;
+}
+
+.experience__inner {
+  padding: 0 25px;
+}
+
+.experience__title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.experience__title img,
+.education__title img,
+.employee__members img,
+.employee__members-down img {
+  object-fit: cover;
+}
+
+.employee__title,
+.program__museum-title {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.employee__inner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.employees img {
+  border-radius: 10px;
+}
+
+.employees em {
+  font-size: 17px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.employee-top h4 {
+  margin: 0 0 8px 0;
+}
+
+.employee__members {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 15px 0 15px 0;
+}
+
+.employee__members span {
+  margin-bottom: 5px;
+}
+
+.employee__members-top h4,
+.employee__members-down h4 {
+  margin: 0 0 6px 0;
+}
+
+.employee__members-down {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bio .about img {
+  height: 350px;
+  width: 350px;
+}
+
+.publications__title,
+.partners__title,
+.awards__title,
+.influences__title,
+.discoveries__title,
+.contributions__title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.publications__work span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.publications__work,
+.partners__person,
+.awards__text,
+.discoveries__text,
+.contributions__text {
+  padding-left: 25px;
+}
+
+.quotes li {
+  list-style-type: circle;
+}
+
+.blockquote {
+  width: 520px;
+  border-radius: 20px;
+  background-color: #ffffed;
+  padding: 1px 5px 1px 1px;
+}
+
+.program__museum-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.program__museum-guide,
+.program__show-guide {
+  display: flex;
+  gap: 15px;
+}
+
+.program__museum-guide img,
+.program__show-guide img {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.program__museum-title {
+  display: flex;
+}
+
+.program__museum-visit {
+  display: flex;
+  gap: 25px;
+  background-color: #f3ffb9;
+  width: 290px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.program__museum-block h3 {
+  margin: 10px;
+}
+
+.program__museum-details em,
+.program__show-details em {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.program__museum-details span,
+.program__show-details span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.program__museum-guide b,
+.program__show-guide b {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.program__show-visit {
+  display: flex;
+  gap: 25px;
+  background-color: #f3ffb9;
+  width: 350px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.program__show-img {
+  object-fit: cover;
+}
+
+.web {
+  background-color: #d8f5fe;
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+}
+
+.web__html,
+.web__css,
+.web__js {
+  margin-bottom: 30px;
+}
+
+.web__html-title,
+.web__css-title,
+.web__js-title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.web__html-title span,
+.web__css-title span,
+.web__js-title span {
+  display: block;
+  margin-bottom: 8px;
+  width: 300px;
+}
+
+.web__html-elements span,
+.web__html-properties span,
+.web__css-elements span,
+.web__js-functions span,
+.web__css-attributes span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.web__html-elements mark,
+.web__html-properties mark,
+.web__css-elements mark,
+.web__js-functions mark,
+.web__css-properties mark {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.web__html-name,
+.web__css-name,
+.web__js-name {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.web__html-attributes,
+.web__css-attributes {
+  padding-top: 15px;
 }
