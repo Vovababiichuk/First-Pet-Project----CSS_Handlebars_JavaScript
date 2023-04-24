@@ -684,9 +684,9 @@ router.get('/web', function (req, res) {
 // ================================================================
 
 router.get('/js', function (req, res) {
-   layout: 'basic',
-   
    res.render('js', {
+      layout: 'basic',
+
       name: 'JavaScript',
       description:
          'JavaScript is a popular high-level, dynamic, and interpreted programming language.',
