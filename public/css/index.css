@@ -11,11 +11,11 @@ main,
 header,
 footer,
 nav {
-  /* margin: 2px; */
+  margin: 10px;
 }
 
 section {
-  /* padding: 16px; */
+  padding: 16px;
 }
 
 h2 {

@@ -219,22 +219,23 @@ router.get('/work', function (req, res) {
                duration: {
                   from: '10.10.2022',
                   to: null,
-               }, 
+               },
                projectAmount: 3,
                projects: [
                   {
                      name: 'Resume',
                      url: 'http://volodymyr-about-me.mypressonline.com/',
-                     about: 'Airbnb competitor. High-load application for searching apartments.',
+                     about:
+                        'Airbnb competitor. High-load application for searching apartments.',
                      stacks: [
                         {
-                           name: 'React.js', 
-                        }, 
-                        {
-                           name: 'HTML/CSS', 
+                           name: 'React.js',
                         },
                         {
-                           name: 'Node.js', 
+                           name: 'HTML/CSS',
+                        },
+                        {
+                           name: 'Node.js',
                         },
                      ],
                      awards: [
@@ -246,7 +247,7 @@ router.get('/work', function (req, res) {
                         },
                      ],
                      stackAmount: 3,
-                     awardAmount: 2, 
+                     awardAmount: 2,
                   },
                ],
             },
@@ -256,6 +257,88 @@ router.get('/work', function (req, res) {
       footer,
    })
 })
+
+// ================================================================
+
+router.get('/js', function (req, res) {
+   // res.render генерує нам HTML сторінку
+
+   //            ↙ cюди вводимо назву файлу з сontainer
+   res.render('js', {
+      name: 'JavaScript',
+      description:
+         'JavaScript is a popular high-level, dynamic, and interpreted programming language.',
+      history: {
+         year: 1995,
+         founder: 'Brendan Eich',
+      },
+      types: [
+         'Number',
+         'String',
+         'Boolean',
+         'Null',
+         'Undefined',
+         'Symbol',
+         'Object',
+      ],
+      syntax: {
+         variables: ['var', 'let', 'const'],
+         functions: ['function'],
+         conditionals: ['if', 'else', 'switch'],
+         loops: ['for', 'while', 'do-while'],
+         classes: ['class'],
+      },
+      features: [
+         'First-class functions',
+         'Closures',
+         'Dynamic typing',
+         'Prototype-based inheritance',
+         'Asynchronous programming with Promises and async/await',
+         'Modules with import/export statements',
+      ],
+      libraries: [
+         'jQuery',
+         'React',
+         'Angular',
+         'Vue',
+         'Node.js',
+         'Express.js',
+         'Lodash',
+         'Moment.js',
+      ],
+      tools: [
+         'Babel',
+         'Webpack',
+         'ESLint',
+         'Jest',
+         'Mocha',
+         'Chai',
+         'Selenium',
+         'Cypress',
+      ],
+      community: [
+         {
+            name: 'Stack Overflow',
+            type: 'forum',
+         },
+         {
+            name: 'JavaScript Weekly',
+            type: 'newsletter',
+         },
+         {
+            name: 'The Changelog',
+            type: 'podcast',
+         },
+         {
+            name: 'CSS-Tricks',
+            type: 'blog',
+         },
+      ],
+   })
+   //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
 
 // Підключаємо роутер до бек-енду
 module.exports = router
