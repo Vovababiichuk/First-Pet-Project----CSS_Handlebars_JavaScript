@@ -343,3 +343,22 @@ li {
 .web__css-attributes {
   padding-top: 15px;
 }
+
+/* ================facebook================ */
+
+.card-body span{
+  display: block;
+}
+
+.facebook h2 {
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.facebook__users-amy img {
+  object-fit: cover;
+}
+
+.facebook__users-groups h4 {
+  text-decoration: underline;
+}
