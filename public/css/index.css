@@ -344,6 +344,26 @@ li {
 }
 
 <<<<<<< HEAD
+/* ================facebook================ */
+
+.card-body span{
+  display: block;
+}
+
+.facebook h2 {
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.facebook__users-amy img {
+  object-fit: cover;
+}
+
+.facebook__users-groups h4 {
+  text-decoration: underline;
+}
+=======
+<<<<<<< HEAD
 /* =========mac============ */
 
 .mac__top span {
@@ -441,3 +461,4 @@ li {
 >>>>>>> ceb4c46368fc9df0a6fa22e3cbed91cc28be3f7f
 }
 >>>>>>> c8862e2c99e4e21ea60002ee81af9b72f550e49e
+>>>>>>> a9aae1df6e4dc8d271095ed179d040daf888bb13
