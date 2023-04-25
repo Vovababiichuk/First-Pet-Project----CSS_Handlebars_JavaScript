@@ -1161,13 +1161,19 @@ router.get('/task22', function (req, res) {
                },
             },
          },
+      },
+   })
+   //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
 router.get('/task21', function (req, res) {
    res.render('task21', {
       layout: 'bootstrap',
       page: {
          title: 'Resume | task21',
       },
-      
+
       heading: {
          main: {
             title: 'JavaScript',
