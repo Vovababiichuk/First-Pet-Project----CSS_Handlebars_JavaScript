@@ -1,4 +1,26 @@
-.text-title {
-  color: red;
+/* ==============task21====== */
+
+.btn-outline:not(:last-child){
+  display: block;
+  margin-bottom: 20px;
 }
+
+.heading__card-1,
+.heading__card-2,
+.display__card {
+  margin-bottom: 20px;
+}
+
+.heading,
+.display {
+  margin-bottom: 30px;
+}
+
+.paragraph button{
+  text-decoration: none;
+}
+
+
+
+
 
