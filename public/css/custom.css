@@ -1,8 +1,26 @@
-/* ==============task21====== */
+/* ===========task22=========== */
+.header-title {
+  margin-bottom: 25px;
+}
 
-.btn-outline:not(:last-child){
-  display: block;
+.about,
+.advantage {
+  margin-bottom: 30px;
+}
+
+.about-subtitle {
+  margin-bottom: 40px;
+}
+
+.advantage-title,
+.agreement-title,
+.about-sub {
   margin-bottom: 20px;
+}
+
+.advantage__card-1,
+.advantage__card-2 {
+  margin-bottom: 30px;
 }
 
 .heading__card-1,
