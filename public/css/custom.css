@@ -1,66 +1,84 @@
+html {
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1200px;
+   padding: 0 15px;
+}
+
+section {
+   margin-bottom: 30px;
+}
+
+/* ============lesson-2======= */
+
+.card-size {
+   width: 300px;
+}
+
+.card img {
+   object-fit: cover;
+}
+
 /* ===========task22=========== */
 .header-title {
-  margin-bottom: 25px;
+   margin-bottom: 25px;
 }
 
 .about,
 .advantage {
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .about-subtitle {
-  margin-bottom: 40px;
+   margin-bottom: 40px;
 }
 
 .advantage-title,
 .agreement-title,
 .about-sub {
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .advantage__card-1,
 .advantage__card-2 {
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .heading__card-1,
 .heading__card-2,
 .display__card {
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .heading,
 .display {
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
-.paragraph button{
-  text-decoration: none;
+.paragraph button {
+   text-decoration: none;
 }
 
 /* ==============task21====== */
 
-.btn-outline:not(:last-child){
-  display: block;
-  margin-bottom: 20px;
+.btn-outline:not(:last-child) {
+   display: block;
+   margin-bottom: 20px;
 }
 
 .heading__card-1,
 .heading__card-2,
 .display__card {
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .heading,
 .display {
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
-.paragraph button{
-  text-decoration: none;
+.paragraph button {
+   text-decoration: none;
 }
-
-
-
-
-

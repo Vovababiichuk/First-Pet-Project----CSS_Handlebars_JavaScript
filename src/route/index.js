@@ -225,8 +225,7 @@ router.get('/work', function (req, res) {
                   {
                      name: 'Resume',
                      url: 'http://volodymyr-about-me.mypressonline.com/',
-                     about:
-                        'Airbnb competitor. High-load application for searching apartments.',
+                     about: 'Airbnb competitor. High-load application for searching apartments.',
                      stacks: [
                         {
                            name: 'React.js',
@@ -319,9 +318,12 @@ router.get('/person', function (req, res) {
                                     {
                                        name: 'Alice Johnson',
                                        title: 'Software Engineer',
-                                       email:
-                                          'alice.johnson@example.com',
-                                       skills: ['Java', 'Python', 'SQL'],
+                                       email: 'alice.johnson@example.com',
+                                       skills: [
+                                          'Java',
+                                          'Python',
+                                          'SQL',
+                                       ],
                                        projects: [
                                           {
                                              name: 'Project A',
@@ -334,8 +336,7 @@ router.get('/person', function (req, res) {
                                              team_members: [
                                                 {
                                                    name: 'Bob Lee',
-                                                   title:
-                                                      'Software Engineer',
+                                                   title: 'Software Engineer',
                                                 },
                                                 {
                                                    name: 'Cindy Chen',
@@ -393,8 +394,7 @@ router.get('/bio', function (req, res) {
             publisher: 'Annalen der Physik',
          },
          {
-            title:
-               'Does the Inertia of a Body Depend Upon Its Energy Content?',
+            title: 'Does the Inertia of a Body Depend Upon Its Energy Content?',
             year: 1905,
             publisher: 'Annalen der Physik',
          },
@@ -487,7 +487,8 @@ router.get('/program', function (req, res) {
                            {
                               name: 'Mona Lisa',
                               artist: 'Leonardo da Vinci',
-                              description: 'Iconic portrait painting',
+                              description:
+                                 'Iconic portrait painting',
                               audio_guide: true,
                            },
                            {
@@ -514,7 +515,8 @@ router.get('/program', function (req, res) {
                      venue: {
                         name: 'Moulin Rouge',
                         location: {
-                           address: '82 Boulevard de Clichy',
+                           address:
+                              '82 Boulevard de Clichy',
                            city: 'Paris',
                            country: 'France',
                         },
@@ -601,7 +603,8 @@ router.get('/web', function (req, res) {
                properties: [
                   {
                      name: 'color',
-                     description: 'Sets the color of the text.',
+                     description:
+                        'Sets the color of the text.',
                      values: [
                         {
                            value: 'red',
@@ -1130,7 +1133,8 @@ router.get('/task22', function (req, res) {
             title: 'Advantage',
             efficiency: {
                title: 'Efficiency',
-               sub_title: 'Streamline your software development',
+               sub_title:
+                  'Streamline your software development',
                description:
                   'Streamline your software development with our innovative platform...',
                button: 'Show more',
@@ -1145,7 +1149,8 @@ router.get('/task22', function (req, res) {
             },
             collaboration: {
                title: 'Collaboration',
-               sub_title: 'Connect with like-minded developers',
+               sub_title:
+                  'Connect with like-minded developers',
                description:
                   'Connect with a community of like-minded developers to share knowledge and insights...',
                button: 'Show more',

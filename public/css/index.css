@@ -1,180 +1,188 @@
 html {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+   box-sizing: inherit;
 }
 
 p {
-  margin: 0;
+   margin: 0;
 }
 
 img {
-  vertical-align: top;
+   vertical-align: top;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+   max-width: 100%;
+   display: block;
 }
 
 body {
-  margin: 32px;
-  background: #fff;
-  font-family: 'Roboto', sans-serif;
+   margin: 32px;
+   background: #fff;
+   font-family: 'Roboto', sans-serif;
 }
 
 main,
 header,
 footer,
 nav {
-  margin: 15px;
+   margin: 15px;
+}
+
+.nav {
+   margin: 30px;
+}
+
+.nav span {
+   padding: 0 10px;
 }
 
 section {
-  padding: 16px;
+   padding: 16px;
 }
 
 h2 {
-  margin-bottom: 15px;
+   margin-bottom: 15px;
 }
 
 footer em {
-  color: #767676;
+   color: #767676;
 }
 
 li {
-  margin-bottom: 5px;
+   margin-bottom: 5px;
 }
 
 /* =============================== */
 
 .person,
 .program {
-  background-color: rgb(255, 247, 237);
-  padding: 15px;
-  border-radius: 8px;
+   background-color: rgb(255, 247, 237);
+   padding: 15px;
+   border-radius: 8px;
 }
 
 .about,
 .excursion {
-  display: flex;
+   display: flex;
 }
 
 .about__img,
 .excursion__img {
-  width: 250px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-right: 40px;
+   width: 250px;
+   height: 220px;
+   object-fit: cover;
+   border-radius: 15px;
+   margin-right: 40px;
 }
 
 .about__name,
 .excursion__name {
-  font-size: 30px;
+   font-size: 30px;
 }
 
 .about__content span,
 .experience span,
 .excursion__content span {
-  display: block;
-  margin-bottom: 8px;
-  /* color: #757575; */
+   display: block;
+   margin-bottom: 8px;
+   /* color: #757575; */
 }
 
 .about__content h1 {
-  margin: 0 0 10px 0;
+   margin: 0 0 10px 0;
 }
 
 .education__title,
 .program__title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
 }
 
 .education__content li {
-  list-style-type: none;
+   list-style-type: none;
 }
 .education__content ul {
-  padding-left: 25px;
+   padding-left: 25px;
 }
 
 .experience__inner {
-  padding: 0 25px;
+   padding: 0 25px;
 }
 
 .experience__title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
 }
 
 .experience__title img,
 .education__title img,
 .employee__members img,
 .employee__members-down img {
-  object-fit: cover;
+   object-fit: cover;
 }
 
 .employee__title,
 .program__museum-title {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+   display: flex;
+   gap: 15px;
+   align-items: center;
 }
 
 .employee__inner {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 15px;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 15px;
 }
 
 .employees img {
-  border-radius: 10px;
+   border-radius: 10px;
 }
 
 .employees em {
-  font-size: 17px;
-  margin-bottom: 10px;
-  display: block;
+   font-size: 17px;
+   margin-bottom: 10px;
+   display: block;
 }
 
 .employee-top h4 {
-  margin: 0 0 8px 0;
+   margin: 0 0 8px 0;
 }
 
 .employee__members {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin: 15px 0 15px 0;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   margin: 15px 0 15px 0;
 }
 
 .employee__members span {
-  margin-bottom: 5px;
+   margin-bottom: 5px;
 }
 
 .employee__members-top h4,
 .employee__members-down h4 {
-  margin: 0 0 6px 0;
+   margin: 0 0 6px 0;
 }
 
 .employee__members-down {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 20px;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 20px;
 }
 
 .bio .about img {
-  height: 350px;
-  width: 350px;
+   height: 350px;
+   width: 350px;
 }
 
 .publications__title,
@@ -183,14 +191,14 @@ li {
 .influences__title,
 .discoveries__title,
 .contributions__title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
 }
 
 .publications__work span {
-  display: block;
-  margin-bottom: 4px;
+   display: block;
+   margin-bottom: 4px;
 }
 
 .publications__work,
@@ -198,118 +206,118 @@ li {
 .awards__text,
 .discoveries__text,
 .contributions__text {
-  padding-left: 25px;
+   padding-left: 25px;
 }
 
 .quotes li {
-  list-style-type: circle;
+   list-style-type: circle;
 }
 
 .blockquote {
-  width: 520px;
-  border-radius: 20px;
-  background-color: #ffffed;
-  padding: 1px 5px 1px 1px;
+   width: 520px;
+   border-radius: 20px;
+   background-color: #ffffed;
+   padding: 1px 5px 1px 1px;
 }
 
 .program__museum-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 50%;
 }
 
 .program__museum-guide,
 .program__show-guide {
-  display: flex;
-  gap: 15px;
+   display: flex;
+   gap: 15px;
 }
 
 .program__museum-guide img,
 .program__show-guide img {
-  border-radius: 10px;
-  width: 70px;
-  height: 70px;
-  margin-bottom: 20px;
+   border-radius: 10px;
+   width: 70px;
+   height: 70px;
+   margin-bottom: 20px;
 }
 
 .program__museum-title {
-  display: flex;
+   display: flex;
 }
 
 .program__museum-visit {
-  display: flex;
-  gap: 25px;
-  background-color: #f3ffb9;
-  width: 290px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  margin-bottom: 10px;
+   display: flex;
+   gap: 25px;
+   background-color: #f3ffb9;
+   width: 290px;
+   padding: 10px 10px 10px 10px;
+   border-radius: 15px;
+   margin-bottom: 10px;
 }
 
 .program__museum-block h3 {
-  margin: 10px;
+   margin: 10px;
 }
 
 .program__museum-details em,
 .program__show-details em {
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  display: block;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+   display: block;
 }
 
 .program__museum-details span,
 .program__show-details span {
-  display: block;
-  margin-bottom: 8px;
+   display: block;
+   margin-bottom: 8px;
 }
 
 .program__museum-guide b,
 .program__show-guide b {
-  margin-bottom: 8px;
-  display: block;
+   margin-bottom: 8px;
+   display: block;
 }
 
 .program__show-visit {
-  display: flex;
-  gap: 25px;
-  background-color: #f3ffb9;
-  width: 350px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  margin-bottom: 10px;
+   display: flex;
+   gap: 25px;
+   background-color: #f3ffb9;
+   width: 350px;
+   padding: 10px 10px 10px 10px;
+   border-radius: 15px;
+   margin-bottom: 10px;
 }
 
 .program__show-img {
-  object-fit: cover;
+   object-fit: cover;
 }
 
 .web {
-  background-color: #d8f5fe;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
+   background-color: #d8f5fe;
+   padding: 10px 10px 10px 10px;
+   border-radius: 15px;
 }
 
 .web__html,
 .web__css,
 .web__js {
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .web__html-title,
 .web__css-title,
 .web__js-title {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+   display: flex;
+   gap: 20px;
+   align-items: center;
 }
 
 .web__html-title span,
 .web__css-title span,
 .web__js-title span {
-  display: block;
-  margin-bottom: 8px;
-  width: 300px;
+   display: block;
+   margin-bottom: 8px;
+   width: 300px;
 }
 
 .web__html-elements span,
@@ -317,8 +325,8 @@ li {
 .web__css-elements span,
 .web__js-functions span,
 .web__css-attributes span {
-  display: block;
-  margin-bottom: 8px;
+   display: block;
+   margin-bottom: 8px;
 }
 
 .web__html-elements mark,
@@ -326,166 +334,165 @@ li {
 .web__css-elements mark,
 .web__js-functions mark,
 .web__css-properties mark {
-  border: 1px solid;
-  border-radius: 3px;
-  padding: 5px;
+   border: 1px solid;
+   border-radius: 3px;
+   padding: 5px;
 }
 
 .web__html-name,
 .web__css-name,
 .web__js-name {
-  font-weight: 700;
-  font-size: 22px;
+   font-weight: 700;
+   font-size: 22px;
 }
 
 .web__html-attributes,
 .web__css-attributes {
-  padding-top: 15px;
+   padding-top: 15px;
 }
 
 /* =================js================== */
 
 .js__title {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
 }
 .js__top h1 {
-  color: #014aff;
+   color: #014aff;
 }
 
 .js__top i {
-  display: block;
+   display: block;
 }
 
 .js__subtitle {
-  color: #00b3ff;
+   color: #00b3ff;
 }
 
 .js__content b {
-  font-size: 22px;
-  padding: 8px;
-  display: block;
+   font-size: 22px;
+   padding: 8px;
+   display: block;
 }
 
 .alert-info,
 .alert-warning,
 .alert-danger,
 .alert-success {
-  display: inline-block;
-  font-size: 14px;
-  width: 300px;
+   display: inline-block;
+   font-size: 14px;
+   width: 300px;
 }
 
 .badge {
-  margin-bottom: 4px;
+   margin-bottom: 4px;
 }
 
 .list-group {
-  width: 300px;
+   width: 300px;
 }
 
 /* ===========================car============== */
 
 .car__top-text span {
-  display: block;
+   display: block;
 }
 
 .car__content-features b,
 .car__content-engine b,
 .car__content-economy b,
 .car__content-price b {
-  font-size: 26px;
-  padding: 10px 0;
-  display: block;
+   font-size: 26px;
+   padding: 10px 0;
+   display: block;
 }
 
 .interior i,
 .exterior i {
-  text-transform: uppercase;
-  display: block;
+   text-transform: uppercase;
+   display: block;
 }
 
 .alert {
-  margin: 5px;
-  display: block;
+   margin: 5px;
+   display: block;
 }
 
 .alert-warning,
 .alert-info,
 .alert-primary {
-  width: 300px;
+   width: 300px;
 }
 
 .total {
-  font-size: 22px;
-  font-weight: 600;
+   font-size: 22px;
+   font-weight: 600;
 }
 
 /* =========mac============ */
 
 .mac__top span {
-  display: block;
+   display: block;
 }
 
 .mac__content b {
-  font-size: 26px;
-  padding: 15px 0;
+   font-size: 26px;
+   padding: 15px 0;
 }
 
 .mac__content-text {
-  display: block;
+   display: block;
 }
 
 .inside {
-  margin: 10px 0;
+   margin: 10px 0;
 }
 
 /* ================facebook================ */
 
 .card-body span {
-  display: block;
+   display: block;
 }
 
 .facebook h2 {
-  margin: 10px 0;
-  text-decoration: underline;
+   margin: 10px 0;
+   text-decoration: underline;
 }
 
 .facebook__users-amy img {
-  object-fit: cover;
+   object-fit: cover;
 }
 
 .facebook__users-groups h4 {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 /* ============nav ================= */
 
 .breadcrumb {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  font-size: 20px;
-  justify-content: space-around;
-  max-width: 450px;
+   list-style: none;
+   padding: 0;
+   display: flex;
+   font-size: 20px;
+   justify-content: space-around;
+   max-width: 450px;
 }
 .breadcrumb a {
-  text-decoration: none;
-  color: rgb(110, 110, 110);
-  font-weight: bold;
+   text-decoration: none;
+   color: rgb(110, 110, 110);
+   font-weight: bold;
 }
 .breadcrumb li span {
-  color: gray;
+   color: gray;
 }
 .breadcrumb li a {
-  color: orange;
-  transition: color 300ms;
+   color: orange;
+   transition: color 300ms;
 }
 .breadcrumb li .unique {
-  color: #000;
+   color: #000;
 }
 .breadcrumb li a:hover {
-  color: rgb(176, 115, 0);
+   color: rgb(176, 115, 0);
 }
-
