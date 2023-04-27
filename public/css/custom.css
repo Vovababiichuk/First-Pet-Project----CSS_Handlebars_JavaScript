@@ -2,15 +2,6 @@ html {
    box-sizing: border-box;
 }
 
-.container {
-   max-width: 1200px;
-   padding: 0 15px;
-}
-
-section {
-   margin-bottom: 30px;
-}
-
 /* ============lesson-2======= */
 
 .card-size {
@@ -82,3 +73,23 @@ section {
 .paragraph button {
    text-decoration: none;
 }
+
+/* ================task31======== */
+
+.container-task31 {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+.navigation {
+   padding: 20px 0 0 0;
+}
+
+.navigation a,
+.footer a {
+   text-decoration: none; 
+}
+
+
+
+
