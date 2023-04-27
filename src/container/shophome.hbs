@@ -1,0 +1,189 @@
+<main>
+   <div class="container-shop">
+      <div class="wrapper">
+         <section class="navigation mb-4">
+            {{#with navigation}}
+            <div class="row">
+               <div class="col-12">
+                  <ul class="nav fs-5">
+                     {{#each links}}
+                     <li class="nav-item">
+                        <a class="nav-link active" href="{{this.href}}">{{this.text}}</a>
+                     </li>
+                     {{/each}}
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disablet</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            {{/with}}
+         </section>
+         <section class="news-block mb-4">
+            {{#with newsBlock}}
+            <h2 class="text-center fs-1 mb-5">{{title}}</h2>
+            <div class="row g-3">
+               {{#each cards}}
+               <div class="col-3">
+                  <div class="card text-bg-dark">
+                     <div class="card-header">
+                        <span class="card-title">{{title}}</span>
+                        {{#if isTop}}
+                        <span class="badge text-bg-success rounded-pill
+                           text-uppercase">Топ</span>
+                        {{/if}}
+                        {{#if isNew}}
+                        <span class="badge text-bg-danger rounded-pill
+                           text-uppercase">Нова</span>
+                        {{/if}}
+                     </div>
+                     <div class="card-body">{{description}}</div>
+                  </div>
+               </div>
+               {{/each}}
+            </div>
+            {{/with}}
+         </section>
+         <hr>
+         <section class="goods-block mb-4">
+            {{#with goodsBlock}}
+            <div class="tabs row mb-5">
+               <div class="col">
+                  <ul class="nav nav-tabs pt-3 fs-5">
+                     {{#each tabs}}
+                     <div class="nav-item">
+                        <a class="nav-link {{#if isActive}} active {{/if}} {{#if isDisabled}} disabled {{/if}} fw-medium" href="#">{{this.text}}</a>
+                     </div>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="cards row g-3">
+               {{#each cards}}
+               <div class="col-4">
+                  <div class="card">
+                     <img src="{{image}}" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <span class="card-title">{{title}}</span>
+                           {{#if isHot}}
+                           <span class="badge text-bg-warning rounded-pill
+                              text-uppercase">Hot!</span>
+                           {{/if}}
+                           {{#if isNew}}
+                           <span class="badge text-bg-primary rounded-pill
+                              text-uppercase">Нове</span>
+                           {{/if}}
+                        </div>
+                        <p>{{description}}</p>
+                     </div>
+                  </div>
+               </div>
+               {{/each}}
+            </div>
+            {{/with}}
+         </section>
+         <hr>
+         <section class="subscribe py-3">
+            {{#with subscribe}}
+            <div class="row">
+               <div class="col-12">
+                  <div class="card text-bg-dark">
+                     <div class="card-body">
+                        <h2 class="card-title">{{header}}</h2>
+                        <p>{{description}}</p>
+                        {{#each buttons}}
+                        <button class="btn btn-primary" href="{{link}}">{{text}}</button>
+                        {{/each}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {{/with}}
+         </section>
+         <hr>
+         <section class="service py-3">
+            {{#with service}}
+            <div class="row">
+               <div class="col-12">
+                  <div class="card text-bg-success text-center">
+                     <div class="card-body">
+                        <h2 class="card-title">{{title}}</h2>
+                        <p>{{description}}</p>
+                        {{#each buttons}}
+                        <button class="btn btn-primary" href="{{link}}">{{text}}</button>
+                        {{/each}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {{/with}}
+         </section>
+         <hr>
+         <footer class="footer-shop mb-4">
+            <div class="row fs-5">
+               <div class="col-2">
+                  <ul class="footer-shop__list">
+                     {{#each footer.[0]}}
+                     <li class="footer-shop__item mb-3">
+                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+                     </li>
+                     {{/each}}
+                     <li class="footer-shop__item">
+                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-2">
+                  <ul class="footer-shop__list">
+                     {{#each footer.[1]}}
+                     <li class="footer-shop__item mb-3">
+                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+                     </li>
+                     {{/each}}
+                     <li class="footer-shop__item">
+                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-2">
+                  <ul class="footer-shop__list">
+                     {{#each footer.[2]}}
+                     <li class="footer-shop__item mb-3">
+                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+                     </li>
+                     {{/each}}
+                     <li class="footer-shop__item">
+                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-2">
+                  <ul class="footer-shop__list">
+                     {{#each footer.[3]}}
+                     <li class="footer-shop__item mb-3">
+                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+                     </li>
+                     {{/each}}
+                     <li class="footer-shop__item">
+                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4">
+                  <ul class="footer-shop__list">
+                     {{#each footer.[4]}}
+                     <li class="footer-shop__item mb-3">
+                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+                     </li>
+                     {{/each}}
+                     <li class="footer-shop__item">
+                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </div>
+</main>
