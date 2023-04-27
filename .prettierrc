@@ -5,3 +5,14 @@
   "singleQuote": true,
   "printWidth": 60
 }
+
+{
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "options": {
+        "parser": "babel"
+      }
+    }
+  ]
+}
