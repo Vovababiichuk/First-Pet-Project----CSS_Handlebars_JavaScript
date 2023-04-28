@@ -76,7 +76,8 @@ html {
 
 /* ================task31======== */
 
-.container-task31 {
+.container-task31,
+.container-shop {
    max-width: 1100px;
    margin: 0 auto;
 }
@@ -90,6 +91,18 @@ html {
    text-decoration: none; 
 }
 
+/* ===============shophome================== */
 
+.goods-block li,
+.footer-shop__item,
+.footer-shop__link {
+   list-style-type: none;
+   text-decoration: none;
+}
+
+.subscribe button:not(:last-child) {
+   display: block;
+   margin-bottom: 20px;
+}
 
 
