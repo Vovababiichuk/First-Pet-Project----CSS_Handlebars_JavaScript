@@ -1,62 +1,47 @@
 <div class="row fs-5">
    <div class="col-2">
-      <ul class="footer-shop__list">
+      <ul class="nav flex-column">
          {{#each footer.[0]}}
-         <li class="footer-shop__item mb-3">
-            <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+         <li class="nav-item">
+            <a class="nav-link {{#if @last}}disabled{{/if}}" aria-current="page" href="{{this.link}}">{{this.text}}</a>
          </li>
          {{/each}}
-         <li class="footer-shop__item">
-            <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-         </li>
       </ul>
    </div>
    <div class="col-2">
-      <ul class="footer-shop__list">
+      <ul class="nav flex-column">
          {{#each footer.[1]}}
-         <li class="footer-shop__item mb-3">
-            <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+         <li class="nav-item">
+            <a class="nav-link {{#if @last}}disabled{{/if}}" aria-current="page" href="{{this.link}}">{{this.text}}</a>
          </li>
          {{/each}}
-         <li class="footer-shop__item">
-            <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-         </li>
       </ul>
    </div>
    <div class="col-2">
-      <ul class="footer-shop__list">
+      <ul class="nav flex-column">
          {{#each footer.[2]}}
-         <li class="footer-shop__item mb-3">
-            <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+         <li class="nav-item">
+            <a class="nav-link {{#if @last}}disabled{{/if}}" aria-current="page" href="{{this.link}}">{{this.text}}</a>
          </li>
          {{/each}}
-         <li class="footer-shop__item">
-            <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-         </li>
       </ul>
    </div>
    <div class="col-2">
-      <ul class="footer-shop__list">
+      <ul class="nav flex-column">
          {{#each footer.[3]}}
-         <li class="footer-shop__item mb-3">
-            <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+         <li class="nav-item">
+            <a class="nav-link {{#if @last}}disabled{{/if}}" aria-current="page" href="{{this.link}}">{{this.text}}</a>
          </li>
          {{/each}}
-         <li class="footer-shop__item">
-            <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-         </li>
       </ul>
    </div>
    <div class="col-4">
-      <ul class="footer-shop__list">
+      <ul class="nav flex-column">
          {{#each footer.[4]}}
-         <li class="footer-shop__item mb-3">
-            <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
+         <li class="nav-item">
+            <a class="nav-link {{#if @last}}disabled{{/if}}" aria-current="page" href="{{this.link}}">{{this.text}}</a>
          </li>
          {{/each}}
-         <li class="footer-shop__item">
-            <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-         </li>
       </ul>
    </div>
 </div>
