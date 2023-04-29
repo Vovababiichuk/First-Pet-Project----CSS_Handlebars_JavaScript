@@ -2,6 +2,25 @@ html {
    box-sizing: border-box;
 }
 
+html,
+body {
+   height: 100%;
+}
+
+body {
+   background-color: #fff;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
 /* ============lesson-2======= */
 
 .card-size {
@@ -105,4 +124,8 @@ html {
    margin-bottom: 20px;
 }
 
+/* ==============shoporder============ */
 
+.coupon-select .select-size {
+   padding: 20px;
+}
