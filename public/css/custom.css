@@ -209,7 +209,8 @@ body {
    display: block;
 }
 
-.goods .row {
+.goods .row,
+.purchase .row {
    align-items: center;
 }
 
@@ -229,3 +230,42 @@ body {
    display: block;
    margin-bottom: 20px;
 }
+
+/* ==================shopprofile====== */
+
+.purchase button {
+   margin-right: 10px;
+}
+
+.purchase span {
+   display: block;
+}
+
+.purchase .card-text b {
+   display: block;
+}
+
+.purchase .card-text small {
+   display: block;
+   margin-bottom: 10px;
+}
+
+.purchase-line {
+   border-width: 2px;
+}
+
+.user-info span:not(:last-child) {
+   display: block;
+   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
