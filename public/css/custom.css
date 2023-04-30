@@ -107,7 +107,7 @@ body {
 
 .navigation a,
 .footer a {
-   text-decoration: none; 
+   text-decoration: none;
 }
 
 /* ===============shophome================== */
@@ -128,4 +128,104 @@ body {
 
 .coupon-select .select-size {
    padding: 20px;
+}
+
+/* ===============.breadcrumb========== */
+
+.breadcrumbs {
+   display: table;
+   table-layout: fixed;
+   /* display: flex; */
+   flex-wrap: wrap;
+   overflow: hidden;
+   /* border-radius: .2em; */
+   padding: 0;
+   margin: 0 0 6px 0;
+   width: 100%;
+}
+
+.breadcrumbs a {
+   color: #fff;
+   font-size: 19px;
+}
+
+.breadcrumbs>li {
+   display: table-cell;
+   position: relative;
+   padding: 0.4em 1em 0.5em 3em;
+   background: #222;
+   border-color: #222;
+   color: #fff;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.breadcrumbs>li:before,
+.breadcrumbs>li:after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent #fff;
+   border-width: 8.5em 0 8.5em 1.85em;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   z-index: 1;
+}
+
+.breadcrumbs>li:after {
+   left: 100%;
+   border-width: 6.5em 0 6.5em 1.5em;
+   border-left-color: inherit;
+   z-index: 1;
+}
+
+.breadcrumbs>li:last-of-type:before,
+.breadcrumbs>li:last-of-type:after {
+   content: none;
+}
+
+.breadcrumbs>li:first-of-type {
+   padding-left: 2em;
+}
+
+.breadcrumbs .red-arrow {
+   background-color: red;
+   border-color: red;
+}
+
+/* =============shopcart========= */
+
+.goods .img-fluid {
+   width: 220px;
+   height: 100%;
+   padding: 12px;
+}
+
+.goods span {
+   display: block;
+}
+
+.goods .row {
+   align-items: center;
+}
+
+.goods .button {
+   padding-left: 110px;
+}
+
+.card-bottom:not(:last-child) {
+   margin-bottom: 22px;
+}
+
+.total small {
+   display: block;;
+}
+
+.total button:not(:last-child) {
+   display: block;
+   margin-bottom: 20px;
 }

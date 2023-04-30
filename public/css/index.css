@@ -22,7 +22,7 @@ img {
 }
 
 body {
-   margin: 32px;
+   margin: 0;
    background: #fff;
    font-family: 'Roboto', sans-serif;
 }
@@ -100,6 +100,7 @@ li {
 .education__content li {
    list-style-type: none;
 }
+
 .education__content ul {
    padding-left: 25px;
 }
@@ -350,6 +351,7 @@ li {
    align-items: center;
    gap: 20px;
 }
+
 .js__top h1 {
    color: #014aff;
 }
@@ -470,21 +472,103 @@ li {
    justify-content: space-around;
    max-width: 450px;
 }
+
 .breadcrumb a {
    text-decoration: none;
    color: rgb(110, 110, 110);
    font-weight: bold;
 }
+
 .breadcrumb li span {
    color: gray;
 }
+
 .breadcrumb li a {
    color: orange;
    transition: color 300ms;
 }
+
 .breadcrumb li .unique {
    color: #000;
 }
+
 .breadcrumb li a:hover {
    color: rgb(176, 115, 0);
+}
+
+/* ===================index====== */
+
+.hero-index {
+   background-image: url(/images/hero/hero-bg.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+
+/* ===============.breadcrumb========== */
+
+.breadcrumbs {
+   display: table;
+   table-layout: fixed;
+   /* display: flex; */
+   flex-wrap: wrap;
+   overflow: hidden;
+   /* border-radius: .2em; */
+   padding: 0;
+   margin: 0 0 6px 0;
+   width: 100%;
+}
+
+.breadcrumbs a {
+   color: #fff;
+   font-size: 19px;
+}
+
+.breadcrumbs>li {
+   display: table-cell;
+   position: relative;
+   padding: 0.4em 1em 0.5em 3em;
+   background: #222;
+   border-color: #222;
+   color: #fff;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.breadcrumbs>li:before,
+.breadcrumbs>li:after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent #fff;
+   border-width: 8.5em 0 8.5em 1.85em;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   z-index: 1;
+}
+
+.breadcrumbs>li:after {
+   left: 100%;
+   border-width: 6.5em 0 6.5em 1.5em;
+   border-left-color: inherit;
+   z-index: 1;
+}
+
+.breadcrumbs>li:last-of-type:before,
+.breadcrumbs>li:last-of-type:after {
+   content: none;
+}
+
+.breadcrumbs>li:first-of-type {
+   padding-left: 2em;
+}
+
+.breadcrumbs .red-arrow {
+   background-color: red;
+   border-color: red;
 }
