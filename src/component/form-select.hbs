@@ -1,0 +1,13 @@
+{{#with data}}
+<form action="#">
+   <label for="sel1" class="form-label">{{label}}</label>
+   <select class="form-select select-size" id="sel1"
+      name="sellist1">
+      <option selected disabled>{{placeholder}}</option>
+      {{#each options}}
+      <option>{{value}}. {{text}}</option>
+      {{/each}}
+   </select>
+</form>
+{{/with}}
+

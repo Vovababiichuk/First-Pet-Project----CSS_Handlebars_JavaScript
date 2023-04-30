@@ -121,68 +121,7 @@
          </section>
          <hr>
          <footer class="footer-shop mb-4">
-            <div class="row fs-5">
-               <div class="col-2">
-                  <ul class="footer-shop__list">
-                     {{#each footer.[0]}}
-                     <li class="footer-shop__item mb-3">
-                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
-                     </li>
-                     {{/each}}
-                     <li class="footer-shop__item">
-                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-2">
-                  <ul class="footer-shop__list">
-                     {{#each footer.[1]}}
-                     <li class="footer-shop__item mb-3">
-                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
-                     </li>
-                     {{/each}}
-                     <li class="footer-shop__item">
-                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-2">
-                  <ul class="footer-shop__list">
-                     {{#each footer.[2]}}
-                     <li class="footer-shop__item mb-3">
-                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
-                     </li>
-                     {{/each}}
-                     <li class="footer-shop__item">
-                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-2">
-                  <ul class="footer-shop__list">
-                     {{#each footer.[3]}}
-                     <li class="footer-shop__item mb-3">
-                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
-                     </li>
-                     {{/each}}
-                     <li class="footer-shop__item">
-                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-4">
-                  <ul class="footer-shop__list">
-                     {{#each footer.[4]}}
-                     <li class="footer-shop__item mb-3">
-                        <a class="footer-shop__link" href="{{this.link}}">{{this.text}}</a>
-                     </li>
-                     {{/each}}
-                     <li class="footer-shop__item">
-                        <a class="footer-shop__link nav-link disabled" href="#">Disabled</a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
+            {{> footer-shop}}
          </footer>
       </div>
    </div>
