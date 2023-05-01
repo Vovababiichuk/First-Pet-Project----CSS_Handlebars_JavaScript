@@ -1,0 +1,163 @@
+<div class="wrapper">
+   <header class="header mb-4">
+      <div class="container">
+         <nav class="navigation mb-5">
+            <div class="card">
+               {{#with navigation}}
+               <div class="row">
+                  <div class="col-12">
+                     {{> navigation}}
+                  </div>
+               </div>
+               {{/with}}
+            </div>
+         </nav>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               {{#each breadcrumb}}
+               <li class="breadcrumb-item">
+                  <a class="{{#if @last}} breadcrumb-item active {{/if}}"
+                     href="{{url}} {{#unless url}}#{{/unless}}" {{#if @last}}
+                     aria-current="page" {{/if}} target="_blank">{{name}}</a>
+               </li>
+               {{/each}}
+            </ol>
+         </nav>
+      </div>
+   </header>
+   <main class="main">
+      <section class="sort-block mb-5">
+         <div class="container">
+            <h1>{{header}}</h1>
+            <div class="row">
+               {{#each sortBlock}}
+               <div class="col-3">
+                  {{> form-select}}
+               </div>
+               {{/each}}
+            </div>
+         </div>
+      </section>
+      <section class="content">
+         <div class="container">
+            <div class="row g-3">
+               <div class="content__aside col-4">
+                  {{#with filterBlock}}
+                  <div class="card">
+                     <div class="card-body">
+                        {{#with sellers}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        <div class="mb-2">
+                           {{#each list}}
+                           <div class="mb-2">
+                              <input name="quiz" type="checkbox"
+                                 class="form-check-input">
+                              <label for="" class="form-check-label">{{value}}</label>
+                           </div>
+                           {{/each}}
+                        </div>
+                        {{/with}}
+                        <hr>
+                        {{#with brands}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        <div class="mb-3">
+                           <input type="text" class="form-control"
+                              placeholder="{{input.placeholder}}">
+                        </div>
+                        <div class="form-check">
+                           {{#each options}}
+                           <div class="mb-2">
+                              <label for="" class="form-check-label">{{value}}</label>
+                              <input class="form-check-input" name="quiz"
+                                 type="checkbox">
+                           </div>
+                           {{/each}}
+                        </div>
+                        {{/with}}
+                        <hr>
+                        {{#with price}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        <div class="mb-3">
+                           <input type="text" class="form-control mb-3"
+                              placeholder="{{range.from}}">
+                           <input type="text" class="form-control"
+                              placeholder="{{range.to}}">
+                        </div>
+                        <button class="btn btn-light content__aside-border px-3
+                           btn-sm">{{button.text}}</button>
+                        {{/with}}
+                        <hr>
+                        {{#with filterList.[0]}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        <div class="mb-2">
+                           <input class="form-check-input" name="quiz"
+                              type="checkbox">
+                           {{#each options}}
+                           <label for="" class="form-check-label">{{value}}</label>
+                           {{/each}}
+                        </div>
+                        {{/with}}
+                        <hr>
+                        {{#with filterList.[1]}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        {{> form-check}}
+                        {{/with}}
+                        <hr>
+                        {{#with filterList.[2]}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        {{> form-check}}
+                        {{/with}}
+                        <hr>
+                        {{#with filterList.[3]}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        {{> form-check}}
+                        {{/with}}
+                        <hr>
+                        {{#with filterList.[4]}}
+                        <span class="mb-2 span-block">{{title}}</span>
+                        {{> form-check}}
+                        {{/with}}
+                        <hr>
+                     </div>
+                  </div>
+                  {{/with}}
+               </div>
+               <div class="content__cards col-8">
+                  <div class="row g-3">
+                     {{#each goodsList}}
+                     <div class="col-6">
+                        {{> catalogItem}}
+                     </div>
+                     {{/each}}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="service">
+         <div class="container">
+            {{#with service}}
+            <div class="row pt-5 mb-4">
+               <div class="col-12">
+                  <div class="card text-bg-success text-center">
+                     <div class="card-body">
+                        <h2 class="card-title">{{title}}</h2>
+                        <p>{{description}}</p>
+                        {{#with buttons.[0]}}
+                        <button class="btn btn-primary" href="{{link}}">{{text}}</button>
+                        {{/with}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {{/with}}
+         </div>
+      </section>
+   </main>
+   <footer class="footer mb-4">
+      <div class="container">
+         <hr class="mb-4">
+         {{> footer-shop}}
+      </div>
+   </footer>
+</div>

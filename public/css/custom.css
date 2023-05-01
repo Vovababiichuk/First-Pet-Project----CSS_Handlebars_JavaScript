@@ -284,9 +284,30 @@ body {
    margin-bottom: 10px;
 }
 
-.review-list .span-block {
+.review-list .span-block,
+.content .span-block {
    display: block;
 }
+
+/* ============Shopcatalog============ */
+
+.content__aside-border {
+   border: 1px solid;
+}
+
+.content__cards .small-block {
+   display: block;
+}
+
+.content__cards .list-block {
+   margin: 0;
+}
+
+.content__cards-size {
+   height: 730px;
+}
+
+
 
 
 

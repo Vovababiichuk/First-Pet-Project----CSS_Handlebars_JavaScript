@@ -81,12 +81,11 @@
                   <h3 class="mb-4">{{title}}</h3>
                   <div class="card mb-3">
                      <div class="row p-3">
+                        {{#each select}}
                         <div class="col-6">
-                           {{> form-select data=select.[0]}}
+                           {{> form-select}}
                         </div>
-                        <div class="col-6">
-                           {{> form-select data=select.[1]}}
-                        </div>
+                        {{/each}}
                      </div>
                   </div>
                   {{#each delivery_type}}
@@ -153,24 +152,28 @@
                <section class="coupon mb-4">
                   {{#with coupon}}
                   <h3 class="mb-4">{{title}}</h3>
-                  {{#with select}}
+                  {{#with select.availabel_coupon}}
                   <div class="mb-3 coupon-select">
-                     {{> form-select data=availabel_coupon}}
+                     {{> form-select}}
                   </div>
+                  {{/with}}
+                  {{#with select.friend_coupon}}
                   <div class="mb-3">
-                     {{> form-select data=friend_coupon}}
+                     {{> form-select}}
                      <div class="form-text">Caption text, description, error
                         notification</div>
                   </div>
                   {{/with}}
-                  {{#with add}}
+                  {{#with add.friend}}
                   <div class="mb-3 coupon-select">
-                     {{> form-select data=friend}}
-                     <div class="form-text">{{friend.caption}}</div>
+                     {{> form-select}}
+                     <div class="form-text">{{caption}}</div>
                   </div>
+                  {{/with}}
+                  {{#with add.colleague}}
                   <div class="">
-                     {{> form-select data=colleague}}
-                     <div class="form-text">{{colleague.caption}}</div>
+                     {{> form-select}}
+                     <div class="form-text">{{caption}}</div>
                   </div>
                   {{/with}}
                   {{/with}}
@@ -200,9 +203,11 @@
                      </form>
                   </div>
                   {{/with}}
+                  {{#with purchase_frequency}}
                   <div class="mb-3">
-                     {{> form-select data=purchase_frequency}}
+                     {{> form-select}}
                   </div>
+                  {{/with}}
                   <div>
                      {{#with factors}}
                      <p>{{title}}</p>
