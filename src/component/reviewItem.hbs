@@ -1,0 +1,52 @@
+<div class="card my-5">
+   <div class="card-body">
+      <div class="card">
+         <div class="card-body">
+            {{#with title}}
+            <span class="span-block fw-medium">{{userName}}</span>
+            <span class="span-block mb-1">{{caption}}</span>
+            <span>{{date}}</span>
+            {{/with}}
+         </div>
+      </div>
+      {{#with reviewBody}}
+      <div class="card mb-4">
+         <div class="card-body">
+            <span class="span-block mb-3">{{seller.title}}: {{seller.value}}</span>
+            <span>{{rating.title}}: {{rating.value}}</span>
+            <p class="mt-3">{{text.[0]}}</p>
+            <p class="">{{text.[1]}}</p>
+            <div class="mb-3">
+               <span class="span-block fw-medium">{{advantages.title}}</span>
+               <span>{{advantages.text}}</span>
+            </div>
+            <div class="mb-3">
+               <span class="span-block fw-medium">{{disadvantages.title}}</span>
+               <span>{{disadvantages.text}}</span>
+            </div>
+            <div>
+               {{#each images}}
+               <img src="{{this}}" alt="photo">
+               {{/each}}
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-1">
+            <span class="sr-only">Тут пусто</span>
+         </div>
+         <div class="col-11">
+            {{#each coments}}
+            <div class="card mb-3">
+               <div class="card-body">
+                  <span class="span-block fw-medium">{{userName}}</span>
+                  <small class="small-block mb-2 pt-1">{{date}}</small>
+                  <p class="mb-0">{{text}}</p>
+               </div>
+            </div>
+            {{/each}}
+         </div>
+      </div>
+      {{/with}}
+   </div>
+</div>

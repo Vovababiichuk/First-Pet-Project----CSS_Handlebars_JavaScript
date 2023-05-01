@@ -263,6 +263,10 @@ router.get('/person', function (req, res) {
    res.render('person', {
       layout: 'person',
 
+      page: {
+         title: 'Resume | Person',
+      },
+
       person: {
          name: 'Emma Johnson',
          age: 32,
@@ -365,6 +369,10 @@ router.get('/bio', function (req, res) {
    res.render('bio', {
       layout: 'bio',
 
+      page: {
+         title: 'Resume | Bio',
+      },
+
       name: 'Albert Einstein',
       birthdate: 'March 14, 1879',
       birthplace:
@@ -462,6 +470,10 @@ router.get('/program', function (req, res) {
    res.render('program', {
       layout: 'program',
 
+      page: {
+         title: 'Resume | Program',
+      },
+
       program: {
          excursion: {
             name: 'Cultural Tour',
@@ -550,6 +562,10 @@ router.get('/web', function (req, res) {
    //             ↙ cюди вводимо назву файлу з сontainer
    res.render('web', {
       layout: 'web',
+
+      page: {
+         title: 'Resume | Web',
+      },
 
       web: {
          languages: [
@@ -681,6 +697,11 @@ router.get('/web', function (req, res) {
 router.get('/js', function (req, res) {
    res.render('js', {
       layout: 'basic',
+
+      page: {
+         title: 'Resume | JS',
+      },
+
       name: 'JavaScript',
       description:
          'JavaScript is a popular high-level, dynamic, and interpreted programming language.',
@@ -759,6 +780,11 @@ router.get('/js', function (req, res) {
 router.get('/car', function (req, res) {
    res.render('car', {
       layout: 'basic',
+
+      page: {
+         title: 'Resume | Car',
+      },
+
       make: 'Toyota',
       model: 'Camry',
       year: 2022,
@@ -855,6 +881,11 @@ router.get('/car', function (req, res) {
 router.get('/mac', function (req, res) {
    res.render('mac', {
       layout: 'basic',
+
+      page: {
+         title: 'Resume | Mac',
+      },
+
       name: 'Apple MacBook Pro',
       description: 'The ultimate notebook for power users',
       price: 1999.99,
@@ -940,6 +971,10 @@ router.get('/mac', function (req, res) {
 router.get('/facebook', function (req, res) {
    res.render('facebook', {
       layout: 'basic',
+
+      page: {
+         title: 'Resume | Facebook',
+      },
 
       name: 'Facebook',
       users: [
@@ -1114,7 +1149,7 @@ router.get('/task22', function (req, res) {
       layout: 'bootstrap',
 
       page: {
-         title: 'Resume | task22',
+         title: 'Bootstrap | task22',
       },
 
       page_header: {
@@ -1176,7 +1211,7 @@ router.get('/task21', function (req, res) {
    res.render('task21', {
       layout: 'bootstrap',
       page: {
-         title: 'Resume | task21',
+         title: 'Bootstrap | task21',
       },
 
       heading: {
@@ -1255,7 +1290,7 @@ router.get('/task31', function (req, res) {
    res.render('task31', {
       layout: 'bootstrap',
       page: {
-         title: 'Resume | task31',
+         title: 'Bootstrap | task31',
       },
       navigation: {
          links: [
@@ -1518,7 +1553,7 @@ router.get('/shophome', function (req, res) {
       layout: 'shop',
 
       page: {
-         title: 'Resume | Shophome',
+         title: 'Shophome',
       },
 
       navigation: {
@@ -1813,7 +1848,7 @@ router.get('/shoporder', function (req, res) {
    res.render('shoporder', {
       layout: 'shop',
       page: {
-         title: 'Resume | Shoporder',
+         title: 'Shoporder',
       },
 
       navigation: {
@@ -2185,6 +2220,11 @@ router.get('/shopcart', function (req, res) {
    //            ↙ cюди вводимо назву файлу з сontainer
    res.render('shopcart', {
       layout: 'shop',
+
+      page: {
+         title: 'Shopcart',
+      },
+
       navigation: {
          links: [
             {
@@ -2437,6 +2477,11 @@ router.get('/shopprofile', function (req, res) {
    //            ↙ cюди вводимо назву файлу з сontainer
    res.render('shopprofile', {
       layout: 'shop',
+
+      page: {
+         title: 'Shopprofile',
+      },
+
       navigation: {
          links: [
             {
@@ -2624,6 +2669,303 @@ router.get('/shopprofile', function (req, res) {
                },
             ],
          },
+      },
+
+      footer: [
+         [
+            {
+               text: 'Home',
+               link: 'https://www.youtube.com/',
+            },
+            {
+               text: 'Trending',
+               link: 'https://www.youtube.com/feed/trending',
+            },
+            {
+               text: 'Subscriptions',
+               link: 'https://www.youtube.com/feed/subscriptions',
+            },
+            {
+               text: 'Library',
+               link: 'https://www.youtube.com/feed/library',
+            },
+         ],
+         [
+            {
+               text: 'History',
+               link: 'https://www.youtube.com/feed/history',
+            },
+            {
+               text: 'Your Videos',
+               link: 'https://www.youtube.com/feed/my_videos',
+            },
+            {
+               text: 'Live',
+               link: 'https://www.youtube.com/live',
+            },
+            {
+               text: 'Settings',
+               link: 'https://www.youtube.com/account',
+            },
+         ],
+         [
+            {
+               text: 'Watch Later',
+               link: 'https://www.youtube.com/playlist?list=WL',
+            },
+            {
+               text: 'Liked Videos',
+               link: 'https://www.youtube.com/playlist?list=LL',
+            },
+            {
+               text: 'Music',
+               link: 'https://www.youtube.com/music',
+            },
+            {
+               text: 'Gaming',
+               link: 'https://www.youtube.com/gaming',
+            },
+         ],
+         [
+            {
+               text: 'Sports',
+               link: 'https://www.youtube.com/channel/UCo_q6aOlvPH7M-j_XGWVgXg',
+            },
+            {
+               text: 'News',
+               link: 'https://www.youtube.com/news',
+            },
+            {
+               text: 'Fashion & Beauty',
+               link: 'https://www.youtube.com/channel/UC1x8rV_f-2yPpzlN0JWZXIQ',
+            },
+            {
+               text: 'Learning',
+               link: 'https://www.youtube.com/learning',
+            },
+         ],
+         [
+            {
+               text: 'Report History',
+               link: 'https://www.youtube.com/feed/history/report_history',
+            },
+            {
+               text: 'Help',
+               link: 'https://support.google.com/youtube/?hl=en',
+            },
+            {
+               text: 'Send Feedback',
+               link: 'https://support.google.com/youtube/answer/4347644?hl=en',
+            },
+            {
+               text: 'About',
+               link: 'https://www.youtube.com/about/',
+            },
+         ],
+      ],
+   })
+   //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+
+// ================================================================
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/shopreview', function (req, res) {
+   // res.render генерує нам HTML сторінку
+
+   //            ↙ cюди вводимо назву файлу з сontainer
+   res.render('shopreview', {
+      layout: 'shop',
+
+      page: {
+         title: 'Shopreview',
+      },
+
+      navigation: {
+         links: [
+            {
+               text: 'Home',
+               href: 'https://github.com/',
+            },
+            {
+               text: 'Contacts',
+               href: 'https://www.google.com/',
+            },
+            {
+               text: 'Help',
+               href: 'https://www.youtube.com/',
+            },
+         ],
+      },
+      formBlock: {
+         header: 'Відгуки покупців про Ноут',
+         rating: {
+            title: 'Оцінка',
+            value: '4.5/5',
+         },
+         actionBlock: {
+            tabs: [
+               { text: 'Про товар' },
+               { text: 'Характеристики' },
+               { text: 'Відгуки', isActive: true },
+            ],
+            report: {
+               title: 'Залиште відгук про товар',
+               button: {
+                  text: 'Написати відгук',
+                  link: 'https://www.youtube.com/',
+               },
+            },
+         },
+         feedbackBlock: {
+            title: 
+               'Хочете поділитись своєю думкою про наш магазин?',
+            buttons: [
+               {
+                  text: 'Додати відгук',
+                  isWarning: true,
+                  link: 'https://www.youtube.com/',
+               },
+               {
+                  text: 'Позитивні відгуки',
+                  isSuccess: true,
+                  link: 'https://www.youtube.com/',
+               },
+               {
+                  text: 'Негативні відгуки',
+                  isDanger: true,
+                  link: 'https://www.youtube.com/',
+               },
+            ],
+         },
+         goodsInfo: {
+            photo: 'https://picsum.photos/110/100',
+            name: 'Ноут Asus',
+            price: '25 000 ₴',
+            inMarket: true,
+            buttons: [
+               {
+                  text: 'Купити',
+                  isPrimary: true,
+                  link: 'https://www.youtube.com/',
+               },
+               {
+                  text: 'Купити в кредит',
+                  isSecondary: true,
+                  link: 'https://www.youtube.com/',
+               },
+            ],
+            seller: {
+               title: 'Продавець',
+               value: 'Machinery',
+            },
+         },
+      },
+
+      reviewList: [
+         {
+            title: {
+               userName: 'Іван Іванов',
+               caption: 'Відгук покупця',
+               date: '1 січня 2023',
+            },
+            reviewBody: {
+               seller: {
+                  title: 'Продавець',
+                  value: 'Machinery',
+               },
+               rating: {
+                  title: 'Оцінка',
+                  value: '5/5',
+               },
+               text: [
+                  "Цей ноутбук має гарний дизайн та добре виконує свої основні функції. Швидкість роботи та продуктивність в цілому є на задовільному рівні. Крім того, присутній достатній обсяг пам'яті та потужність акумулятора.",
+                  ' Однак, можливі проблеми з перегрівом під час тривалого використання, та може бути недостатньої ємності жорсткого диска для потреб користувача. Крім того, ціна може бути дещо високою порівняно з аналогічними моделями.',
+               ],
+               advantages: {
+                  title: 'Переваги',
+                  text: 'Дизайн, швидкість роботи, обсяг пам’яті, акумулятор',
+               },
+               disadvantages: {
+                  title: 'Недоліки',
+                  text: 'Перегрів, ємкість жосткого диску',
+               },
+               images: [
+                  'https://picsum.photos/110/100',
+                  'https://picsum.photos/110/100',
+                  'https://picsum.photos/110/100',
+               ],
+               coments: [
+                  {
+                     userName: 'Користувач',
+                     date: '1 січня 2023',
+                     text: 'Дякую за відгук, я подумаю про недоліки, про які ви згадували, перш ніж зробити покупку.',
+                  },
+                  {
+                     userName: 'Користувач',
+                     date: '3 січня 2023',
+                     text: 'Дякую за корисний відгук! Це допомогло мені зробити вибір щодо покупки ноутбука.',
+                  },
+                  {
+                     userName: 'Користувач',
+                     date: '10 січня 2023',
+                     text: 'Дякую за відгук, але я хотів би дізнатися більше деталей про проблеми з перегрівом, щоб зробити зважений вибір перед покупкою.',
+                  },
+               ],
+            },
+         },
+         {
+            title: {
+               userName: 'Петро Петров',
+               caption: 'Відгук покупця',
+               date: '1 січня 2023',
+            },
+            reviewBody: {
+               seller: {
+                  title: 'Продавець',
+                  value: 'Machinery',
+               },
+               rating: {
+                  title: 'Оцінка',
+                  value: '5/5',
+               },
+               text: [
+                  "Цей ноутбук має гарний дизайн та добре виконує свої основні функції. Швидкість роботи та продуктивність в цілому є на задовільному рівні. Крім того, присутній достатній обсяг пам'яті та потужність акумулятора.",
+               ],
+               advantages: {
+                  title: 'Переваги',
+                  text: 'Обсяг пам’яті, акумулятор',
+               },
+               disadvantages: {
+                  title: 'Недоліки',
+                  text: 'Не виявлено',
+               },
+               images: ['https://picsum.photos/110/100'],
+               coments: [
+                  {
+                     userName: 'Користувач',
+                     date: '1 січня 2023',
+                     text: 'Дякую за відгук, я подумаю про недоліки, про які ви згадували, перш ніж зробити покупку.',
+                  },
+               ],
+            },
+         },
+      ],
+
+      service: {
+         title: 'Our Services',
+         description:
+            'We offer a variety of services to meet your needs, including web design, content creation, and social media management.',
+         buttons: [
+            {
+               text: 'Show More',
+               link: 'https://www.youtube.com/',
+            },
+         ],
       },
 
       footer: [

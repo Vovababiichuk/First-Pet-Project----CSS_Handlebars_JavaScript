@@ -1,0 +1,130 @@
+<div class="wrapper">
+   <header class="header">
+      <div class="container">
+         <nav class="navigation mb-3">
+            <div class="card">
+               {{#with navigation}}
+               <div class="row">
+                  <div class="col-12">
+                     {{> navigation}}
+                  </div>
+               </div>
+               {{/with}}
+            </div>
+         </nav>
+      </div>
+   </header>
+   <main class="main">
+      <section class="reviews">
+         <div class="container">
+            {{#with formBlock}}
+            <div class="row">
+               <div class="col-8">
+                  <h1 class="pt-4 mb-3">{{header}}</h1>
+                  {{#with rating}}
+                  <small>{{title}}: {{value}}</small>
+                  {{/with}}
+                  {{#with actionBlock}}
+                  <div class="tabs row mb-5">
+                     <div class="col-12">
+                        <ul class="nav nav-tabs pt-3 justify-content-between">
+                           {{#each tabs}}
+                           <li class="nav-item">
+                              <a class="nav-link {{#if isActive}} active fw-medium{{/if}} {{#if @first}} ms-5 {{/if}} {{#if @last}} px-5 {{/if}}"
+                                 href="#">{{text}}</a>
+                           </li>
+                           {{/each}}
+                        </ul>
+                     </div>
+                  </div>
+                  <hr class="purchase-line">
+                  {{#with report}}
+                  <div class="card my-5">
+                     <div class="card-body">
+                        <p>{{title}}</p>
+                        {{#with button}}
+                        <button class="btn btn-secondary" href="{{link}}" type="button">{{text}}</button>
+                        {{/with}}
+                     </div>
+                  </div>
+                  {{/with}}
+                  {{/with}}
+                  <hr class="purchase-line">
+                  {{#with feedbackBlock}}
+                  <h2 class="py-4">{{title}}</h2>
+                  <div class="py-1 mb-4">
+                     {{#each buttons}}
+                     <button class="btn {{#if isWarning}} btn-warning {{/if}} {{#if isSuccess}} btn-success 
+                     {{/if}} {{#if isDanger}} btn-danger {{/if}}" href="{{link}}" type="button">{{text}}</button>
+                     {{/each}}
+                  </div>
+                  {{/with}}
+               </div>
+               <div class="col-4 pt-4">
+                  {{#with goodsInfo}}
+                  <div class="card mb-3">
+                     <div class="card-body">
+                        <img class="mb-3" src="{{photo}}" alt="goods photo">
+                        <p class="fw-medium mb-0">{{name}}</p>
+                     </div>
+                  </div>
+                  <div class="card mb-3">
+                     <div class="card-body">
+                        <span class="fw-medium">{{price}}</span>
+                        <small class="small-block mb-3 pt-1">{{#if inMarket}} Є в наявності {{/if}}</small>
+                        {{#each buttons}}
+                        <button class="btn {{#if isPrimary}} btn-primary {{/if}} {{#if isSecondary}} btn-secondary {{/if}} button-block" href="{{link}}" type="button">{{text}}</button>
+                        {{/each}}
+                     </div>
+                  </div>
+                  {{#with seller}}
+                  <div class="card">
+                     <div class="card-body">
+                        <p class="mb-0">{{title}}: <span class="fw-medium">{{value}}</span></p>
+                     </div>
+                  </div>
+                  {{/with}}
+                  {{/with}}
+               </div>
+            </div>
+            {{/with}}
+            <hr class="purchase-line">
+         </div>
+      </section>
+      <section class="review-list">
+         <div class="container">
+            {{#with reviewList.[0]}}
+            {{> reviewItem}}
+            {{/with}}
+            {{#with reviewList.[1]}}
+            {{> reviewItem}}
+            {{/with}}
+         </div>
+      </section>
+      <section class="service mb-4">
+         <div class="container">
+            {{#with service}}
+            <div class="row">
+               <div class="col-12">
+                  <div class="card text-bg-success text-center">
+                     <div class="card-body">
+                        <h2 class="card-title">{{title}}</h2>
+                        <p>{{description}}</p>
+                        {{#with buttons.[0]}}
+                        <button class="btn btn-primary" href="{{link}}">{{text}}</button>
+                        {{/with}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {{/with}}
+         </div>
+      </section>
+   </main>
+   <footer class="footer mb-4">
+      <div class="container">
+         <hr class="mb-4">
+         {{> footer-shop}}
+      </div>
+   </footer>
+</div>
