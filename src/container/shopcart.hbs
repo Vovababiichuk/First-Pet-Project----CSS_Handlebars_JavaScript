@@ -1,0 +1,73 @@
+<div class="wrapper">
+   <header class="header">
+      <div class="container">
+         <nav class="navigation">
+            <div class="card">
+               {{#with navigation}}
+               <div class="row">
+                  <div class="col-12">
+                     {{> navigation}}
+                  </div>
+               </div>
+               {{/with}}
+            </div>
+         </nav>
+         <div class="basket">
+            {{#with header}}
+            <h2 class="pt-5 mb-3">{{title}} <i class="fa-solid
+                  fa-cart-shopping"></i></h2>
+            <button class="btn btn-secondary mb-5" href="{{button.link}}"
+               type="button" target="_blank">{{button.text}}</button>
+            {{/with}}
+         </div>
+         <hr>
+      </div>
+   </header>
+   <main class="main">
+      <section class="goods py-4">
+         <div class="container">
+            {{#each goodsBlock}}
+            {{> cartGoodsItem}}
+            {{/each}}
+         </div>
+      </section>
+      <section class="total mb-5">
+         <div class="container">
+            <hr>
+            {{#with total}}
+            <h2 class="pt-4 mb-3">{{title}}</h2>
+            <b class="display-5 fw-medium">{{amount}}</b>
+            <small class="pt-2 mb-4">{{delivery}}</small>
+            {{#each buttons}}
+            <button class="btn {{#if isSuccess}} btn-success {{/if}} {{#if
+               isOutline}} btn-outline-success {{/if}}" type="button"
+               href="{{link}}">{{text}}</button>
+            {{/each}}
+            {{/with}}
+         </div>
+      </section>
+      <section class="goods-other mb-2">
+         <div class="container">
+            <hr>
+            {{#with goodsOtherBlock}}
+            <h2 class="pt-4 mb-4 text-center">{{title}}</h2>
+            {{> cardVerticalImg}}
+            {{/with}}
+         </div>
+      </section>
+      <section class="subscribe py-4 mb-1">
+         <div class="container">
+            <hr class="mb-5">
+            {{#with subscribe}}
+            {{> subscribe-block}}
+            {{/with}}
+         </div>
+      </section>
+   </main>
+   <footer class="footer mb-4">
+      <div class="container">
+         <hr class="mb-4">
+         {{> footer-shop}}
+      </div>
+   </footer>
+</div>

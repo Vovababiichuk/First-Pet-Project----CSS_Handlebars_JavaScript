@@ -5,16 +5,7 @@
             {{#with navigation}}
             <div class="row">
                <div class="col-12">
-                  <ul class="nav fs-5">
-                     {{#each links}}
-                     <li class="nav-item">
-                        <a class="nav-link active" href="{{this.href}}">{{this.text}}</a>
-                     </li>
-                     {{/each}}
-                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disablet</a>
-                     </li>
-                  </ul>
+                  {{> navigation}}
                </div>
             </div>
             {{/with}}
@@ -58,47 +49,13 @@
                   </ul>
                </div>
             </div>
-            <div class="cards row g-3">
-               {{#each cards}}
-               <div class="col-4">
-                  <div class="card">
-                     <img src="{{image}}" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <div class="card-title">
-                           <span class="card-title">{{title}}</span>
-                           {{#if isHot}}
-                           <span class="badge text-bg-warning rounded-pill
-                              text-uppercase">Hot!</span>
-                           {{/if}}
-                           {{#if isNew}}
-                           <span class="badge text-bg-primary rounded-pill
-                              text-uppercase">Нове</span>
-                           {{/if}}
-                        </div>
-                        <p>{{description}}</p>
-                     </div>
-                  </div>
-               </div>
-               {{/each}}
-            </div>
+            {{> cardVerticalImg}}
             {{/with}}
          </section>
          <hr>
          <section class="subscribe py-3">
             {{#with subscribe}}
-            <div class="row">
-               <div class="col-12">
-                  <div class="card text-bg-dark">
-                     <div class="card-body">
-                        <h2 class="card-title">{{header}}</h2>
-                        <p>{{description}}</p>
-                        {{#each buttons}}
-                        <button class="btn btn-primary" href="{{link}}">{{text}}</button>
-                        {{/each}}
-                     </div>
-                  </div>
-               </div>
-            </div>
+            {{> subscribe-block}}
             {{/with}}
          </section>
          <hr>

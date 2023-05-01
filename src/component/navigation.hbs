@@ -1,0 +1,15 @@
+{{!-- <ul class="nav fs-5">
+   {{#each links}}
+   <li class="nav-item">
+      <a class="nav-link {{#unless href}} disabled
+         {{/unless}}" href="{{this.href}}" target="_blank">{{this.text}}</a>
+   </li>
+   {{/each}}
+</ul> --}}
+<ul class="nav fs-5">
+   {{#each links}}
+   <li class="nav-item">
+      <a class="nav-link {{#if @last}}disabled{{/if}}" href="{{this.href}}" target="_blank">{{this.text}}</a>
+   </li>
+   {{/each}}
+</ul>
