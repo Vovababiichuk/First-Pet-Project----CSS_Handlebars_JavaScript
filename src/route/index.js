@@ -1138,6 +1138,18 @@ router.get('/bootstrap', function (req, res) {
    })
    //                  ↑↑ сюди вводимо JSON дані
 })
+// ================================================================
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/bootstrap-css', function (req, res) {
+   // res.render генерує нам HTML сторінку
+
+   //            ↙ cюди вводимо назву файлу з сontainer
+   res.render('bootstrap-css', {
+      layout: 'bootstrap-css',
+   })
+   //                  ↑↑ сюди вводимо JSON дані
+})
 
 // ================================================================
 
