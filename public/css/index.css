@@ -523,6 +523,14 @@ li {
 .breadcrumbs a {
    color: #fff;
    font-size: 19px;
+   transition: all 0.2s ease-in-out;
+}
+
+.breadcrumbs a:hover {
+   color: black;;
+   background-color: white;
+   border-radius: 6px;
+   padding: 1px 7px 3px 7px;
 }
 
 .breadcrumbs>li {
@@ -577,7 +585,7 @@ li {
 
 .hand-animation {
    padding: 50px;
-   background-color: rgba(0, 0, 0, 0.4);
+   background-color: rgba(0, 0, 0, 0.2);
    height: 100vh;
 }
 
