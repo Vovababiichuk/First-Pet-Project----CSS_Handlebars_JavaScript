@@ -87,36 +87,10 @@
                            btn-sm">{{button.text}}</button>
                         {{/with}}
                         <hr>
-                        {{#with filterList.[0]}}
-                        <span class="mb-2 span-block">{{title}}</span>
-                        <div class="mb-2">
-                           <input class="form-check-input" name="quiz"
-                              type="checkbox">
-                           {{#each options}}
-                           <label for="" class="form-check-label">{{value}}</label>
-                           {{/each}}
-                        </div>
-                        {{/with}}
-                        <hr>
-                        {{#with filterList.[1]}}
+                        {{#each filterList}}
                         <span class="mb-2 span-block">{{title}}</span>
                         {{> form-check}}
-                        {{/with}}
-                        <hr>
-                        {{#with filterList.[2]}}
-                        <span class="mb-2 span-block">{{title}}</span>
-                        {{> form-check}}
-                        {{/with}}
-                        <hr>
-                        {{#with filterList.[3]}}
-                        <span class="mb-2 span-block">{{title}}</span>
-                        {{> form-check}}
-                        {{/with}}
-                        <hr>
-                        {{#with filterList.[4]}}
-                        <span class="mb-2 span-block">{{title}}</span>
-                        {{> form-check}}
-                        {{/with}}
+                        {{/each}}
                         <hr>
                      </div>
                   </div>
