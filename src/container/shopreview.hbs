@@ -93,12 +93,9 @@
       </section>
       <section class="review-list">
          <div class="container">
-            {{#with reviewList.[0]}}
+            {{#each reviewList}}
             {{> reviewItem}}
-            {{/with}}
-            {{#with reviewList.[1]}}
-            {{> reviewItem}}
-            {{/with}}
+            {{/each}}
          </div>
       </section>
       <section class="service mb-4">
