@@ -84,6 +84,10 @@ body {
    text-decoration: none;
 }
 
+.agreement {
+   padding-bottom: 40px;
+}
+
 /* ==============task21====== */
 
 .btn-outline:not(:last-child) {
@@ -104,6 +108,10 @@ body {
 
 .paragraph button {
    text-decoration: none;
+}
+
+.paragraph {
+   padding-bottom: 40px;
 }
 
 /* ================task31======== */
@@ -212,6 +220,11 @@ body {
 
 /* =============shopcart========= */
 
+.navigation {
+   margin-right: 0;
+   margin-left: 0;
+}
+
 .goods .img-fluid {
    width: 220px;
    height: 100%;
@@ -304,7 +317,7 @@ body {
 }
 
 .content__cards-size {
-   height: 730px;
+   height: 750px;
 }
 
 

@@ -1,28 +1,38 @@
 <div>
    {{#with main}}
-      <main>
-         <section>
-            {{> title data="My education" big=true}}
-            <ul>
-               {{#each educations}}
-                  <li>
-                     {{name}}
-                     {{#if isEnd}} (ще в процесі) {{/if}}
-                  </li>
-               {{/each}}
-            </ul>
-         </section>
-         <section>
-            {{> title data="My Certificates"}}
-            <ul>
-               {{#each certificates}}
-                  <li>
-                     {{name}} ({{id}})
-                  </li>
-               {{/each}}
-            </ul>
-         </section>
-      </main>
+   <main>
+      <section class="education">
+         <hr>
+         <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+               {{> title data="My education" big=true}}
+               <div class="alert alert-info fs-5" role="alert">
+                  <ul>
+                     {{#each educations}}
+                     <li>
+                        {{name}}
+                        {{#if isEnd}} (ще в процесі) {{/if}}
+                     </li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="col-5">
+               <div class="mb-5">{{> title data="My Certificates"}}</div>
+               <div class="alert alert-info fs-4" role="alert">
+                  <ul>
+                     {{#each certificates}}
+                     <li>
+                        {{name}} ({{id}})
+                     </li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+         </div>
+            <hr class="mb-4">
+      </section>
+   </main>
    {{/with}}
 </div>
-

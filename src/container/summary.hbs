@@ -1,35 +1,35 @@
-{{!--
-Це код container файлу для summary сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
---}}
-
 <div>
    {{#with main}}
    <main>
-      <section class="mb-4">
-         {{> title data=summary.title big=true}}
-         <div>
-            <p>
-               {{summary.text}}
-            </p>
-         </div>
-      </section>
-
-      {{#with experience}}
-         <section>
-            {{> title data=title}}
-            <div>
-               <p>
-                  {{text}}
-               </p>
+      <section class="summary">
+         <hr class="mb-5">
+         <div class="row gx-2">
+            <div class="col-1"></div>
+            <div class=" col-5 mb-4">
+               {{> title data=summary.title big=true}}
+               <div class="alert alert-warning fs-5" role="alert">
+                  <div>
+                     <p>
+                        {{summary.text}}
+                     </p>
+                  </div>
+               </div>
             </div>
-         </section>
-      {{/with}}
+            <div class="col-5">
+               {{#with experience}}
+               <div class="mb-5">{{> title data=title}}</div>
+               <div class="alert alert-warning fs-5" role="alert">
+                  <div>
+                     <p>
+                        {{text}}
+                     </p>
+                  </div>
+               </div>
+               {{/with}}
+            </div>
+         </div>
+         <hr class="mb-4">
+      </section>
    </main>
    {{/with}}
 </div>
-
-{{!--
-Цей код містить лише те, що буде виводитись в {{{body}}} в layout/default.hbs
-Адже наш layout/default.hbs має вже структуру HTML
---}}

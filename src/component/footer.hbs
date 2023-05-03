@@ -1,6 +1,5 @@
 {{#with footer}}
-   <footer>
-      <hr>
+   <footer class="footer">
       <div class="mb-3">
          {{#with social}}
          {{> link text=email.text href=email.href blank=true}}
@@ -20,3 +19,9 @@
       </div>
    </footer>
 {{/with}}
+
+<style>
+   .footer {
+      padding: 0 0 0 30px;
+   }
+</style>
