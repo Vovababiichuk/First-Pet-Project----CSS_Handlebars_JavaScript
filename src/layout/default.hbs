@@ -26,12 +26,12 @@
 
    </head>
 
-   <body class="">
+   <body>
       {{> nav}}
 
       {{#with header}}
-      <header>
-         <div>
+      <header class="ps-4 mb-4 pt-3">
+         <div class="mb-3">
             <h1>{{name.firstname}} {{name.lastname}}</h1>
          </div>
          <div class="mb-2">
@@ -43,7 +43,6 @@
          <div>
             <address>{{address}}</address>
          </div>
-         <hr>
       </header>
       {{/with}}
 

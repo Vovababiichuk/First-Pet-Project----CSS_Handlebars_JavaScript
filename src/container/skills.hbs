@@ -1,36 +1,46 @@
 <div>
    {{#with main}}
-      <main>
-         <section>
-            {{> title data="All skills" big=true}}
-            <ul>
-               {{#each skills}}
-                  <li>
-                     {{name}}
-                     {{#if point includeZero=true}} ({{point}}) {{/if}}
-                     {{#if isTop}} (TOP) {{/if}}
-                     {{#unless point includeZero=true}} (не вивчаємо) {{/unless}}
-                     {{#unless point }}
+   <main>
+      <section class="skills">
+         <hr class="mb-4">
+         <div class="row mb-4">
+            <div class="col-1"></div>
+            <div class="col-4">
+               {{> title data="All skills" big=true}}
+               <div class="alert alert-info" role="alert">
+                  <ul class="fs-5">
+                     {{#each skills}}
+                     <li>
+                        {{name}}
+                        {{#if point includeZero=true}} ({{point}}) {{/if}}
+                        {{#if isTop}} (TOP) {{/if}}
+                        {{#unless point includeZero=true}} (не вивчаємо) {{/unless}}
+                        {{#unless point }}
                         {{#if point includeZero=true}}
-                           (зараз вивчаємо) 
+                        (зараз вивчаємо)
                         {{/if}}
-                     {{/unless}}
-                  </li>
-               {{/each}}
-            </ul>
-         </section>
-         <section>
-               {{> title data="My hobbies"}}
-               <ul>
-                  {{#each hobbies}}
+                        {{/unless}}
+                     </li>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+            <div class="col-5">
+               <div class="mb-5">{{> title data="My hobbies"}}</div>
+               <div class="alert alert-info fs-4" role="alert">
+                  <ul>
+                     {{#each hobbies}}
                      <li>
                         {{name}}
                         {{#if isMain}} ("favorite") {{/if}}
                      </li>
-                  {{/each}}
-               </ul>
-            </section>
-      </main>
+                     {{/each}}
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <hr class="mb-4">
+      </section>
+   </main>
    {{/with}}
 </div>
-

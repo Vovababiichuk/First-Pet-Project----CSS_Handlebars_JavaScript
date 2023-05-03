@@ -14,85 +14,91 @@
                      <span class="card-text">Age: {{age}}</span>
                   </div>
                </div>
-               <div class="facebook__users-friends">
-                  <h2>Friends</h2>
-                  {{#with friends.[0]}}
-                  <b>{{name}}</b>
-                  <ul>
-                     <li>Id: {{id}}</li>
-                     <li>Gender: {{gender}}</li>
-                     <li>Age: {{age}}</li>
-                     <li>Mutual-friends</li>
-                     <ul>
-                        {{#each mutual_friends}}
-                        <i>{{this.name}}</i>
+               <div class="row">
+                  <div class="col-5">
+                     <div class="facebook__users-friends">
+                        <h2>Friends</h2>
+                        {{#with friends.[0]}}
+                        <b>{{name}}</b>
                         <ul>
-                           <li>Id: {{this.id}}</li>
-                           <li>Gender: {{this.gender}}</li>
-                           <li>Age: {{this.age}}</li>
+                           <li>Id: {{id}}</li>
+                           <li>Gender: {{gender}}</li>
+                           <li>Age: {{age}}</li>
+                           <li>Mutual-friends</li>
+                           <ul>
+                              {{#each mutual_friends}}
+                              <i>{{this.name}}</i>
+                              <ul>
+                                 <li>Id: {{this.id}}</li>
+                                 <li>Gender: {{this.gender}}</li>
+                                 <li>Age: {{this.age}}</li>
+                              </ul>
+                              {{/each}}
+                           </ul>
                         </ul>
-                        {{/each}}
-                     </ul>
-                  </ul>
-                  {{/with}}
-                  {{#with friends.[1]}}
-                  <b>{{name}}</b>
-                  <ul>
-                     <li>Id: {{id}}</li>
-                     <li>Gender: {{gender}}</li>
-                     <li>Age: {{age}}</li>
-                     <li>Mutual-friends</li>
-                     <ul>
-                        {{#each mutual_friends}}
-                        <i>{{this.name}}</i>
+                        {{/with}}
+                        {{#with friends.[1]}}
+                        <b>{{name}}</b>
                         <ul>
-                           <li>Id: {{this.id}}</li>
-                           <li>Gender: {{this.gender}}</li>
-                           <li>Age: {{this.age}}</li>
+                           <li>Id: {{id}}</li>
+                           <li>Gender: {{gender}}</li>
+                           <li>Age: {{age}}</li>
+                           <li>Mutual-friends</li>
+                           <ul>
+                              {{#each mutual_friends}}
+                              <i>{{this.name}}</i>
+                              <ul>
+                                 <li>Id: {{this.id}}</li>
+                                 <li>Gender: {{this.gender}}</li>
+                                 <li>Age: {{this.age}}</li>
+                              </ul>
+                              {{/each}}
+                           </ul>
                         </ul>
-                        {{/each}}
-                     </ul>
-                  </ul>
-                  {{/with}}
-               </div>
-               <div class="facebook__users-groups">
-                  <h2>Groups</h2>
-                  {{#with groups.[0]}}
-                  <b>{{name}}</b>
-                  <ul>
-                     <li>Id: {{id}}</li>
-                     <li>Description: {{description}}</li>
-                     <li>Members: </li>
-                     <ul>
-                        {{#each members}}
-                        <i>{{this.name}}</i>
+                        {{/with}}
+                     </div>
+                  </div>
+                  <div class="col-6">
+                     <div class="facebook__users-groups">
+                        <h2>Groups</h2>
+                        {{#with groups.[0]}}
+                        <b>{{name}}</b>
                         <ul>
-                           <li>Id: {{this.id}}</li>
-                           <li>Gender: {{this.gender}}</li>
-                           <li>Age: {{this.age}}</li>
+                           <li>Id: {{id}}</li>
+                           <li>Description: {{description}}</li>
+                           <li>Members: </li>
+                           <ul>
+                              {{#each members}}
+                              <i>{{this.name}}</i>
+                              <ul>
+                                 <li>Id: {{this.id}}</li>
+                                 <li>Gender: {{this.gender}}</li>
+                                 <li>Age: {{this.age}}</li>
+                              </ul>
+                              {{/each}}
+                           </ul>
                         </ul>
-                        {{/each}}
-                     </ul>
-                  </ul>
-                  {{/with}}
-                  {{#with groups.[1]}}
-                  <b>{{name}}</b>
-                  <ul>
-                     <li>Id: {{id}}</li>
-                     <li>Description: {{description}}</li>
-                     <li>Members: </li>
-                     <ul>
-                        {{#each members}}
-                        <i>{{this.name}}</i>
+                        {{/with}}
+                        {{#with groups.[1]}}
+                        <b>{{name}}</b>
                         <ul>
-                           <li>Id: {{this.id}}</li>
-                           <li>Gender: {{this.gender}}</li>
-                           <li>Age: {{this.age}}</li>
+                           <li>Id: {{id}}</li>
+                           <li>Description: {{description}}</li>
+                           <li>Members: </li>
+                           <ul>
+                              {{#each members}}
+                              <i>{{this.name}}</i>
+                              <ul>
+                                 <li>Id: {{this.id}}</li>
+                                 <li>Gender: {{this.gender}}</li>
+                                 <li>Age: {{this.age}}</li>
+                              </ul>
+                              {{/each}}
+                           </ul>
                         </ul>
-                        {{/each}}
-                     </ul>
-                  </ul>
-                  {{/with}}
+                        {{/with}}
+                     </div>
+                  </div>
                </div>
             </div>
             {{/with}}
@@ -107,46 +113,51 @@
                      <span class="card-text">Age: {{age}}</span>
                   </div>
                </div>
-               <div class="facebook__users-friends">
-                  <h2>Friends</h2>
-                  {{#each friends}}
-                  <b>{{name}}</b>
-                  <ul>
-                     <li>Id: {{id}}</li>
-                     <li>Gender: {{gender}}</li>
-                     <li>Age: {{age}}</li>
-                     <li>Mutual-friends:</li>
-                     {{#with mutual_friends.[0]}}
-                     <ul>
-                        <li>{{name}}</li>
+               <div class="row">
+                  <div class="col-5">
+                     <div class="facebook__users-friends">
+                        <h2>Friends</h2>
+                        {{#each friends}}
+                        <b>{{name}}</b>
                         <ul>
                            <li>Id: {{id}}</li>
                            <li>Gender: {{gender}}</li>
                            <li>Age: {{age}}</li>
-                        </ul>
-                     </ul>
-                     {{/with}}
-                     {{#with mutual_friends.[1]}}
-                     <ul>
-                        <li>{{name}}</li>
-                        <ul>
-                           <li>Id: {{id}}</li>
-                           <li>Gender: {{gender}}</li>
-                           <li>Age: {{age}}</li>
-                           <span>Mutual-friends:</span>
+                           <li>Mutual-friends:</li>
+                           {{#with mutual_friends.[0]}}
                            <ul>
-                              {{#each mutual_friends}}
-                              <i>Name: {{name}}</i>
+                              <li>{{name}}</li>
                               <ul>
                                  <li>Id: {{id}}</li>
                                  <li>Gender: {{gender}}</li>
                                  <li>Age: {{age}}</li>
                               </ul>
-                              {{/each}}
                            </ul>
-                        </ul>
-                     </ul>
-                     {{/with}}
+                           {{/with}}
+                           {{#with mutual_friends.[1]}}
+                           <ul>
+                              <li>{{name}}</li>
+                              <ul>
+                                 <li>Id: {{id}}</li>
+                                 <li>Gender: {{gender}}</li>
+                                 <li>Age: {{age}}</li>
+                                 <span>Mutual-friends:</span>
+                                 <ul>
+                                    {{#each mutual_friends}}
+                                    <i>Name: {{name}}</i>
+                                    <ul>
+                                       <li>Id: {{id}}</li>
+                                       <li>Gender: {{gender}}</li>
+                                       <li>Age: {{age}}</li>
+                                    </ul>
+                                    {{/each}}
+                                 </ul>
+                              </ul>
+                           </ul>
+                           {{/with}}
+                        </div>   
+                  </div>
+                  <div class="col-6">
                      <div class="facebook__users-groups">
                         <h4>Groups</h4>
                         {{#with groups.[0]}}
@@ -186,6 +197,8 @@
                         </ul>
                         {{/with}}
                      </div>
+                  </div>
+               </div>
                   </ul>
                   {{/each}}
                </div>
