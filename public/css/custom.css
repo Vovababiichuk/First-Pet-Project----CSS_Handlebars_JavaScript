@@ -280,6 +280,10 @@ body {
    border-width: 2px;
 }
 
+.purchase img {
+   display: inline;
+}
+
 .user-info span:not(:last-child) {
    display: block;
    margin-bottom: 10px;
@@ -300,6 +304,10 @@ body {
 .review-list .span-block,
 .content .span-block {
    display: block;
+}
+
+.review-list img {
+   display: inline;
 }
 
 /* ============Shopcatalog============ */
