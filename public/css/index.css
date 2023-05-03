@@ -466,7 +466,7 @@ li {
 /* ================facebook================ */
 
 .card-body span {
-   display: block;
+   /* display: block; */
 }
 
 .facebook h2 {
